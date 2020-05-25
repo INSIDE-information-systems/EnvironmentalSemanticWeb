@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:ns6="http://rs.tdwg.org/dwc/terms/"
+	xmlns:apt="http://id.eaufrance.fr/ddd/APT/2.1/" >
+  <rdf:Description rdf:about="http://id.eaufrance.fr/apt/53263">
+    <rdf:type>http://id.eaufrance.fr/ddd/APT/AppelTaxon</rdf:type>
+    <rdf:type>http://rs.tdwg.org/dwc/terms/Taxon</rdf:type>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
+    <rdfs:label>Delphinus capensis</rdfs:label>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Delphinus_capensis" />
+    <owl:sameAs rdf:resource="http://taxref.mnhn.fr/lod/name/361079" />
+    <owl:sameAs rdf:resource="http://fr.dbpedia.org/resource/Delphinus_capensis" />
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q604326" />
+    <dc:title>Delphinus capensis</dc:title>
+    <skos:prefLabel>Delphinus capensis</skos:prefLabel>
+    <dc:identifier>http://id.eaufrance.fr/apt/53263</dc:identifier>
+    <dc:language>fr</dc:language>
+    <dc:source>http://www.sandre.eaufrance.fr/</dc:source>
+    <foaf:page>http://id.eaufrance.fr/apt/53263</foaf:page>
+    <dc:publisher>Service d&#39;Administration National des Données et Référentiels sur l&#39;Eau (SANDRE)</dc:publisher>
+    <ns6:scientificName>Delphinus capensis</ns6:scientificName>
+    <skos:inScheme>http://owl.sandre.eaufrance.fr/apt/2.1/sandre_fmt_owl_apt.owl</skos:inScheme>
+    <dc:subject>APPELLATION DE TAXONS</dc:subject>
+    <apt:AppelTaxonParent rdf:resource="http://id.eaufrance.fr/apt/25458" />
+    <apt:AuteurAppelTaxon>Gray, 1828</apt:AuteurAppelTaxon>
+    <apt:CodeAlternatifAp rdf:nodeID="b46639683" />
+    <apt:CodeAlternatifAp rdf:nodeID="b46639684" />
+    <apt:CodeAlternatifAp rdf:nodeID="b46639685" />
+    <apt:CodeAlternatifAp rdf:nodeID="b46639686" />
+    <apt:Contributor rdf:resource="http://id.eaufrance.fr/int/31490172900066" />
+    <apt:DateCreationAppelTaxon>2019-07-15</apt:DateCreationAppelTaxon>
+    <apt:DateMajAppelTaxon>2019-12-06</apt:DateMajAppelTaxon>
+    <apt:NiveauTaxonomique rdf:resource="http://id.eaufrance.fr/nsa/222#15" />
+    <apt:NomCommunAppelTaxon>Dauphin commun a bec large</apt:NomCommunAppelTaxon>
+    <apt:NomCommunAppelTaxon>Long-beaked common dolphin</apt:NomCommunAppelTaxon>
+    <apt:NomCommunAppelTaxon>Dauphin commun</apt:NomCommunAppelTaxon>
+    <apt:NomLatinAppelTaxon>Delphinus capensis</apt:NomLatinAppelTaxon>
+    <apt:RedacteurFicheAppelTaxon>SAR</apt:RedacteurFicheAppelTaxon>
+    <apt:RefBiblioAppelTaxon>www.inpn.mnhn.fr</apt:RefBiblioAppelTaxon>
+    <apt:StAppelTaxon rdf:resource="http://id.eaufrance.fr/nsa/390#Valid%C3%A9" />
+    <apt:ThemeTaxonAppel rdf:resource="http://id.eaufrance.fr/nsa/121#8" />
+    <apt:TypeAppelTaxon rdf:resource="http://id.eaufrance.fr/nsa/748#S" />
+    <apt:CdAppelTaxon>53263</apt:CdAppelTaxon>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b46639683">
+    <apt:CdAlternatif>361079</apt:CdAlternatif>
+    <apt:OrgCdAlternatif rdf:resource="http://id.eaufrance.fr/nsa/621#TAXREF" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b46639684">
+    <apt:CdAlternatif>137093</apt:CdAlternatif>
+    <apt:OrgCdAlternatif rdf:resource="http://id.eaufrance.fr/nsa/621#WORMS" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b46639685">
+    <apt:CdAlternatif>4220400602</apt:CdAlternatif>
+    <apt:OrgCdAlternatif rdf:resource="http://id.eaufrance.fr/nsa/621#TAXOCODE" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b46639686">
+    <apt:CdAlternatif>DCZ</apt:CdAlternatif>
+    <apt:OrgCdAlternatif rdf:resource="http://id.eaufrance.fr/nsa/621#CODE_3A" />
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,73 @@
+<REFERENTIELS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xml.sandre.eaufrance.fr/scenario/referentiel/3.1" xsi:schemaLocation="http://xml.sandre.eaufrance.fr/scenario/referentiel/3.1 http://xml.sandre.eaufrance.fr/scenario/referentiel/3.1/sandre_sc_referentiel.xsd">
+    <Scenario>
+    <CodeScenario>REFERENTIEL</CodeScenario>
+    <VersionScenario>3.1</VersionScenario>
+    <NomScenario>Diffusion de listes de référence par le Sandre</NomScenario>
+    <DateCreationFichier>2020-05-12</DateCreationFichier>
+    <DateDebutReference>1987-03-20</DateDebutReference>
+    <DateFinReference>2020-05-12</DateFinReference>
+    <Emetteur>
+      <CdIntervenant schemeAgencyID="SANDRE">1470</CdIntervenant>
+      <NomIntervenant>Service d'Administration Nationale des Données et Référentiels sur l'Eau</NomIntervenant>
+    </Emetteur>
+  </Scenario>
+    <Referentiel>
+        <CdReferentiel schemeAgencyID="SANDRE">APT</CdReferentiel>
+        <NomReferentiel>Appellation de taxons</NomReferentiel>
+        <TypeReferentiel>1</TypeReferentiel>
+        <StReferentiel>Validé</StReferentiel>
+        <DateMajReferentiel>2020-05-12T11:40:17</DateMajReferentiel>
+        <NbOccurrences>1</NbOccurrences>
+        <AppelTaxon>
+      <CdAppelTaxon schemeAgencyID="sandre">26382</CdAppelTaxon>
+      <NomLatinAppelTaxon>Delphinus delphis</NomLatinAppelTaxon>
+      <StAppelTaxon>Validé</StAppelTaxon>
+      <TypeAppelTaxon>R</TypeAppelTaxon>
+      <DateCreationAppelTaxon>2011-05-20</DateCreationAppelTaxon>
+      <DateMajAppelTaxon>2015-06-19</DateMajAppelTaxon>
+      <RedacteurFicheAppelTaxon>IFREMER</RedacteurFicheAppelTaxon>
+      <RefBiblioAppelTaxon/>
+      <ComAppelTaxon>Issu de la reprise ERMS de Février 2007
+MAJ : modification automatique du thème.
+ MAJ : ajout du code alternatif 60878 du MNHN.</ComAppelTaxon>
+      <AuteurAppelTaxon>Linnaeus</AuteurAppelTaxon>
+      <AppelTaxonParent>
+        <CdAppelTaxon schemeAgencyID="SANDRE">25458</CdAppelTaxon>
+        <NomLatinAppelTaxon>Delphinus</NomLatinAppelTaxon>
+      </AppelTaxonParent>
+      <NiveauTaxonomique>
+        <AbTax>15</AbTax>
+        <LbNiveauTaxonomique>Espèce</LbNiveauTaxonomique>
+        <HierNiveauTaxonomique>24</HierNiveauTaxonomique>
+      </NiveauTaxonomique>
+      <ThemeTaxonAppel>
+        <CdThemeTaxon>8</CdThemeTaxon>
+        <LbThemeTaxon>Mammifères</LbThemeTaxon>
+      </ThemeTaxonAppel>
+      <CodeAlternatifAp>
+        <IdCdAlternatif>19694</IdCdAlternatif>
+        <CdAlternatif>137094</CdAlternatif>
+        <OrgCdAlternatif>Quadrige²</OrgCdAlternatif>
+      </CodeAlternatifAp>
+      <CodeAlternatifAp>
+        <IdCdAlternatif>64518</IdCdAlternatif>
+        <CdAlternatif>60878</CdAlternatif>
+        <OrgCdAlternatif>TAXREF</OrgCdAlternatif>
+      </CodeAlternatifAp>
+      <CodeAlternatifAp>
+        <IdCdAlternatif>64519</IdCdAlternatif>
+        <CdAlternatif>4220400601</CdAlternatif>
+        <OrgCdAlternatif>TAXOCODE</OrgCdAlternatif>
+      </CodeAlternatifAp>
+      <CodeAlternatifAp>
+        <IdCdAlternatif>64520</IdCdAlternatif>
+        <CdAlternatif>DCO</CdAlternatif>
+        <OrgCdAlternatif>CODE_3A</OrgCdAlternatif>
+      </CodeAlternatifAp>
+      <NomCommunAppelTaxon>
+        <IdNomCommunAppelTaxon>372</IdNomCommunAppelTaxon>
+        <LbNomCommunAppelTaxon>Dauphin commun</LbNomCommunAppelTaxon>
+      </NomCommunAppelTaxon>
+    </AppelTaxon>
+    </Referentiel>
+</REFERENTIELS>

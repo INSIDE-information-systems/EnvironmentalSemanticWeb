@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:ns6="http://rs.tdwg.org/dwc/terms/"
+	xmlns:apt="http://id.eaufrance.fr/ddd/APT/2.1/" >
+  <rdf:Description rdf:about="http://id.eaufrance.fr/apt/26382">
+    <rdf:type>http://id.eaufrance.fr/ddd/APT/AppelTaxon</rdf:type>
+    <rdf:type>http://rs.tdwg.org/dwc/terms/Taxon</rdf:type>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
+    <rdfs:label>Delphinus delphis</rdfs:label>
+    <owl:sameAs rdf:resource="http://taxref.mnhn.fr/lod/name/60878" />
+    <dc:title>Delphinus delphis</dc:title>
+    <skos:prefLabel>Delphinus delphis</skos:prefLabel>
+    <dc:identifier>http://id.eaufrance.fr/apt/26382</dc:identifier>
+    <dc:language>fr</dc:language>
+    <dc:source>http://www.sandre.eaufrance.fr/</dc:source>
+    <foaf:page>http://id.eaufrance.fr/apt/26382</foaf:page>
+    <dc:publisher>Service d&#39;Administration National des Données et Référentiels sur l&#39;Eau (SANDRE)</dc:publisher>
+    <ns6:scientificName>Delphinus delphis</ns6:scientificName>
+    <skos:inScheme>http://owl.sandre.eaufrance.fr/apt/2.1/sandre_fmt_owl_apt.owl</skos:inScheme>
+    <dc:subject>APPELLATION DE TAXONS</dc:subject>
+    <apt:AppelTaxonParent rdf:resource="http://id.eaufrance.fr/apt/25458" />
+    <apt:AuteurAppelTaxon>Linnaeus</apt:AuteurAppelTaxon>
+    <apt:CodeAlternatifAp rdf:nodeID="b46575534" />
+    <apt:CodeAlternatifAp rdf:nodeID="b46575535" />
+    <apt:CodeAlternatifAp rdf:nodeID="b46575536" />
+    <apt:CodeAlternatifAp rdf:nodeID="b46575537" />
+    <apt:ComAppelTaxon>Issu de la reprise ERMS de Février 2007
+MAJ : modification automatique du thème.
+ MAJ : ajout du code alternatif 60878 du MNHN.</apt:ComAppelTaxon>
+    <apt:Contributor rdf:resource="http://id.eaufrance.fr/int/31490172900066" />
+    <apt:DateCreationAppelTaxon>2011-05-20</apt:DateCreationAppelTaxon>
+    <apt:DateMajAppelTaxon>2015-06-19</apt:DateMajAppelTaxon>
+    <apt:NiveauTaxonomique rdf:resource="http://id.eaufrance.fr/nsa/222#15" />
+    <apt:NomCommunAppelTaxon>Dauphin commun</apt:NomCommunAppelTaxon>
+    <apt:NomLatinAppelTaxon>Delphinus delphis</apt:NomLatinAppelTaxon>
+    <apt:RedacteurFicheAppelTaxon>IFREMER</apt:RedacteurFicheAppelTaxon>
+    <apt:StAppelTaxon rdf:resource="http://id.eaufrance.fr/nsa/390#Valid%C3%A9" />
+    <apt:ThemeTaxonAppel rdf:resource="http://id.eaufrance.fr/nsa/121#8" />
+    <apt:TypeAppelTaxon rdf:resource="http://id.eaufrance.fr/nsa/748#R" />
+    <apt:CdAppelTaxon>26382</apt:CdAppelTaxon>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b46575534">
+    <apt:CdAlternatif>137094</apt:CdAlternatif>
+    <apt:OrgCdAlternatif rdf:resource="http://id.eaufrance.fr/nsa/621#Quadrige%C2%B2" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b46575535">
+    <apt:CdAlternatif>60878</apt:CdAlternatif>
+    <apt:OrgCdAlternatif rdf:resource="http://id.eaufrance.fr/nsa/621#TAXREF" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b46575536">
+    <apt:CdAlternatif>4220400601</apt:CdAlternatif>
+    <apt:OrgCdAlternatif rdf:resource="http://id.eaufrance.fr/nsa/621#TAXOCODE" />
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b46575537">
+    <apt:CdAlternatif>DCO</apt:CdAlternatif>
+    <apt:OrgCdAlternatif rdf:resource="http://id.eaufrance.fr/nsa/621#CODE_3A" />
+  </rdf:Description>
+</rdf:RDF>

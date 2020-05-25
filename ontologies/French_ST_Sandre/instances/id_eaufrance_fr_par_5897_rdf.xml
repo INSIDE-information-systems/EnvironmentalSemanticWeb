@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:ns5="http://owl.sandre.eaufrance.fr/par/2.3#"
+	xmlns:par="http://id.eaufrance.fr/ddd/par/3/" >
+  <rdf:Description rdf:about="http://id.eaufrance.fr/par/5897">
+    <rdf:type rdf:resource="http://owl.sandre.eaufrance.fr/par/2.3#Parametre" />
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
+    <rdf:type rdf:resource="http://owl.sandre.eaufrance.fr/par/2.3#ParametreChimique" />
+    <rdf:type>http://id.eaufrance.fr/ddd/PAR/Parametre</rdf:type>
+    <rdfs:label>Méthyl-3-penten-3-one</rdfs:label>
+    <rdfs:comment>Substance chimique de formule brute C6H10O 
+</rdfs:comment>
+    <dc:title>Méthyl-3-penten-3-one</dc:title>
+    <skos:prefLabel>3-Methyl-3-pentene-2-one</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">3-Penten-2-one, 3-methyl-</skos:prefLabel>
+    <dc:identifier>http://id.eaufrance.fr/par/5897</dc:identifier>
+    <dc:language>fr</dc:language>
+    <dc:source>http://www.sandre.eaufrance.fr/</dc:source>
+    <foaf:page>http://id.eaufrance.fr/par/5897</foaf:page>
+    <dc:publisher>Service d&#39;Administration National des Données et Référentiels sur l&#39;Eau (SANDRE)</dc:publisher>
+    <ns5:NomParametre>Méthyl-3-penten-3-one</ns5:NomParametre>
+    <ns5:CdParametre>5897</ns5:CdParametre>
+    <skos:inScheme>http://owl.sandre.eaufrance.fr/par/3/sandre_fmt_owl_par.owl</skos:inScheme>
+    <dc:subject>PARAMÈTRES</dc:subject>
+    <skos:altLabel>MePentOn</skos:altLabel>
+    <skos:definition>Substance chimique de formule brute C6H10O</skos:definition>
+    <par:AuteurParametre>Bureau de Recherches Géologiques et Minières</par:AuteurParametre>
+    <par:Contributor rdf:resource="http://id.eaufrance.fr/int/31490172900066" />
+    <par:DateCreationParametre>2008-03-25</par:DateCreationParametre>
+    <par:DateMajParametre>2012-07-04</par:DateMajParametre>
+    <par:DfParametre>Substance chimique de formule brute C6H10O</par:DfParametre>
+    <par:FauxAmis rdf:resource="http://id.eaufrance.fr/par/1081" />
+    <par:GroupeParametres rdf:resource="http://id.eaufrance.fr/gpr/52" />
+    <par:LbCourtParametre>MePentOn</par:LbCourtParametre>
+    <par:LbLongParametre>3-Methyl-3-pentene-2-one</par:LbLongParametre>
+    <par:NatParametre rdf:resource="http://id.eaufrance.fr/nsa/535#2" />
+    <par:NomParametre>Méthyl-3-penten-3-one</par:NomParametre>
+    <par:NomTradParametre xml:lang="en">3-Penten-2-one, 3-methyl-</par:NomTradParametre>
+    <par:ParametreCalcule>0</par:ParametreCalcule>
+    <par:ParametreChimique rdf:nodeID="b46551070" />
+    <par:StParametre rdf:resource="http://id.eaufrance.fr/nsa/390#Valid%C3%A9" />
+    <par:Synonyme rdf:resource="http://id.eaufrance.fr/par/2005" />
+    <par:Synonyme rdf:resource="http://id.eaufrance.fr/par/2002" />
+    <par:Synonyme rdf:resource="http://id.eaufrance.fr/par/2003" />
+    <par:TypeParametre rdf:resource="http://id.eaufrance.fr/nsa/541#2" />
+    <ns5:DfParametre>Substance chimique de formule brute C6H10O 
+</ns5:DfParametre>
+    <ns5:StParametre>Validé</ns5:StParametre>
+    <par:CdParametre>5897</par:CdParametre>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b46551070">
+    <par:CdCASSubstanceChimique>565-62-8</par:CdCASSubstanceChimique>
+    <par:NomIUPACSubstanceChimique>(&quot;E&quot;)-3-methylpent-3-en-2-one</par:NomIUPACSubstanceChimique>
+    <par:UniteMesure rdf:resource="http://id.eaufrance.fr/urf/133" />
+    <par:UniteMesure rdf:resource="http://id.eaufrance.fr/urf/132" />
+    <par:UniteMesure rdf:resource="http://id.eaufrance.fr/urf/129" />
+  </rdf:Description>
+</rdf:RDF>

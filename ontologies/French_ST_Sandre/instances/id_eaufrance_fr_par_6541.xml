@@ -1,0 +1,74 @@
+<REFERENTIELS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xml.sandre.eaufrance.fr/scenario/referentiel/4" xsi:schemaLocation="http://xml.sandre.eaufrance.fr/scenario/referentiel/4 http://xml.sandre.eaufrance.fr/scenario/referentiel/4/sandre_sc_referentiel.xsd">
+    <Scenario>
+    <CodeScenario>REFERENTIEL</CodeScenario>
+    <VersionScenario>4</VersionScenario>
+    <NomScenario>Diffusion de listes de référence par le Sandre</NomScenario>
+    <DateCreationFichier>2020-05-18</DateCreationFichier>
+    <DateDebutReference>1987-03-20</DateDebutReference>
+    <DateFinReference>2020-05-18</DateFinReference>
+    <Emetteur>
+      <CdIntervenant schemeAgencyID="SANDRE">1470</CdIntervenant>
+      <NomIntervenant>Service d'Administration Nationale des Données et Référentiels sur l'Eau</NomIntervenant>
+    </Emetteur>
+  </Scenario>
+    <Referentiel>
+        <CdReferentiel schemeAgencyID="SANDRE">PAR</CdReferentiel>
+        <NomReferentiel>Paramètres</NomReferentiel>
+        <TypeReferentiel>1</TypeReferentiel>
+        <StReferentiel>Validé</StReferentiel>
+        <DateMajReferentiel>2020-05-18T14:41:57</DateMajReferentiel>
+        <NbOccurrences>1</NbOccurrences>
+        <Parametre>
+      <CdParametre>6541</CdParametre>
+      <NomParametre>Somme du 3-Chlorophenol et du 4-Chlorophenol</NomParametre>
+      <StParametre>Validé</StParametre>
+      <AuteurParametre>Bureau de Recherches Géologiques et Minières - Or</AuteurParametre>
+      <DateCreationParametre>2009-10-26</DateCreationParametre>
+      <DateMajParametre>2015-08-18T14:40:16</DateMajParametre>
+      <DfParametre>Ce paramètre est la somme des 2 paramètres suivants : 
+- Chlorophenol-3 de code Sandre n°1651 ;
+- Chlorophenol-4 de code Sandre n°1650.</DfParametre>
+      <NatParametre>2</NatParametre>
+      <TypeParametre>2</TypeParametre>
+      <ParametreCalcule>1</ParametreCalcule>
+      <LbCourtParametre>3+4ClPheno</LbCourtParametre>
+      <GroupeParametres>
+        <CdGroupeParametres>117</CdGroupeParametres>
+        <NomGroupeParametres>Chlorophénols</NomGroupeParametres>
+      </GroupeParametres>
+      <ParametreDuCalcul>
+        <CdParametre>1650</CdParametre>
+        <NomParametre>Chlorophénol-4</NomParametre>
+      </ParametreDuCalcul>
+      <ParametreDuCalcul>
+        <CdParametre>1651</CdParametre>
+        <NomParametre>Chlorophénol-3</NomParametre>
+      </ParametreDuCalcul>
+      <GenealogiePar>
+        <DateModificationPar>2009-10-25T23:00:00</DateModificationPar>
+        <TypeGenealogiePar>7</TypeGenealogiePar>
+        <ComGenealogiePar>Création</ComGenealogiePar>
+      </GenealogiePar>
+      <ParametreChimique>
+        <UniteMesure>
+          <CdUniteMesure>133</CdUniteMesure>
+          <LbUniteMesure>microgramme par litre</LbUniteMesure>
+          <SymUniteMesure>µg/L</SymUniteMesure>
+          <NatureDeFractionAnalysee>
+            <CdNatureFractionAnalysee>1</CdNatureFractionAnalysee>
+            <LbNatureFractionAnalysee>Fraction liquide</LbNatureFractionAnalysee>
+          </NatureDeFractionAnalysee>
+        </UniteMesure>
+        <UniteMesure>
+          <CdUniteMesure>129</CdUniteMesure>
+          <LbUniteMesure>microgramme par kilogramme</LbUniteMesure>
+          <SymUniteMesure>µg/kg</SymUniteMesure>
+          <NatureDeFractionAnalysee>
+            <CdNatureFractionAnalysee>2</CdNatureFractionAnalysee>
+            <LbNatureFractionAnalysee>Fraction solide</LbNatureFractionAnalysee>
+          </NatureDeFractionAnalysee>
+        </UniteMesure>
+      </ParametreChimique>
+    </Parametre>
+    </Referentiel>
+</REFERENTIELS>

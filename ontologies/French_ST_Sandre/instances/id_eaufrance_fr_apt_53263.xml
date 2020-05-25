@@ -1,0 +1,83 @@
+<REFERENTIELS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xml.sandre.eaufrance.fr/scenario/referentiel/3.1" xsi:schemaLocation="http://xml.sandre.eaufrance.fr/scenario/referentiel/3.1 http://xml.sandre.eaufrance.fr/scenario/referentiel/3.1/sandre_sc_referentiel.xsd">
+    <Scenario>
+    <CodeScenario>REFERENTIEL</CodeScenario>
+    <VersionScenario>3.1</VersionScenario>
+    <NomScenario>Diffusion de listes de référence par le Sandre</NomScenario>
+    <DateCreationFichier>2020-05-12</DateCreationFichier>
+    <DateDebutReference>1987-03-20</DateDebutReference>
+    <DateFinReference>2020-05-12</DateFinReference>
+    <Emetteur>
+      <CdIntervenant schemeAgencyID="SANDRE">1470</CdIntervenant>
+      <NomIntervenant>Service d'Administration Nationale des Données et Référentiels sur l'Eau</NomIntervenant>
+    </Emetteur>
+  </Scenario>
+    <Referentiel>
+        <CdReferentiel schemeAgencyID="SANDRE">APT</CdReferentiel>
+        <NomReferentiel>Appellation de taxons</NomReferentiel>
+        <TypeReferentiel>1</TypeReferentiel>
+        <StReferentiel>Validé</StReferentiel>
+        <DateMajReferentiel>2020-05-12T11:40:17</DateMajReferentiel>
+        <NbOccurrences>1</NbOccurrences>
+        <AppelTaxon>
+      <CdAppelTaxon schemeAgencyID="SANDRE">53263</CdAppelTaxon>
+      <NomLatinAppelTaxon>Delphinus capensis</NomLatinAppelTaxon>
+      <StAppelTaxon>Validé</StAppelTaxon>
+      <TypeAppelTaxon>S</TypeAppelTaxon>
+      <DateCreationAppelTaxon>2019-07-15</DateCreationAppelTaxon>
+      <DateMajAppelTaxon>2019-12-06</DateMajAppelTaxon>
+      <RedacteurFicheAppelTaxon>SAR</RedacteurFicheAppelTaxon>
+      <RefBiblioAppelTaxon>www.inpn.mnhn.fr</RefBiblioAppelTaxon>
+      <ComAppelTaxon/>
+      <AuteurAppelTaxon>Gray, 1828</AuteurAppelTaxon>
+      <EstSynonyme>
+        <CdAppelTaxon schemeAgencyID="SANDRE">26382</CdAppelTaxon>
+        <NomLatinAppelTaxon>Delphinus delphis</NomLatinAppelTaxon>
+      </EstSynonyme>
+      <AppelTaxonParent>
+        <CdAppelTaxon schemeAgencyID="SANDRE">25458</CdAppelTaxon>
+        <NomLatinAppelTaxon>Delphinus</NomLatinAppelTaxon>
+      </AppelTaxonParent>
+      <NiveauTaxonomique>
+        <AbTax>15</AbTax>
+        <LbNiveauTaxonomique>Espèce</LbNiveauTaxonomique>
+        <HierNiveauTaxonomique>24</HierNiveauTaxonomique>
+      </NiveauTaxonomique>
+      <ThemeTaxonAppel>
+        <CdThemeTaxon>8</CdThemeTaxon>
+        <LbThemeTaxon>Mammifères</LbThemeTaxon>
+      </ThemeTaxonAppel>
+      <CodeAlternatifAp>
+        <IdCdAlternatif>92374</IdCdAlternatif>
+        <CdAlternatif>361079</CdAlternatif>
+        <OrgCdAlternatif>TAXREF</OrgCdAlternatif>
+      </CodeAlternatifAp>
+      <CodeAlternatifAp>
+        <IdCdAlternatif>92374</IdCdAlternatif>
+        <CdAlternatif>137093</CdAlternatif>
+        <OrgCdAlternatif>WORMS</OrgCdAlternatif>
+      </CodeAlternatifAp>
+      <CodeAlternatifAp>
+        <IdCdAlternatif>92374</IdCdAlternatif>
+        <CdAlternatif>4220400602</CdAlternatif>
+        <OrgCdAlternatif>TAXOCODE</OrgCdAlternatif>
+      </CodeAlternatifAp>
+      <CodeAlternatifAp>
+        <IdCdAlternatif>92374</IdCdAlternatif>
+        <CdAlternatif>DCZ</CdAlternatif>
+        <OrgCdAlternatif>CODE_3A</OrgCdAlternatif>
+      </CodeAlternatifAp>
+      <NomCommunAppelTaxon>
+        <IdNomCommunAppelTaxon>5459</IdNomCommunAppelTaxon>
+        <LbNomCommunAppelTaxon>Dauphin commun</LbNomCommunAppelTaxon>
+      </NomCommunAppelTaxon>
+      <NomCommunAppelTaxon>
+        <IdNomCommunAppelTaxon>5460</IdNomCommunAppelTaxon>
+        <LbNomCommunAppelTaxon>Dauphin commun a bec large</LbNomCommunAppelTaxon>
+      </NomCommunAppelTaxon>
+      <NomCommunAppelTaxon>
+        <IdNomCommunAppelTaxon>5461</IdNomCommunAppelTaxon>
+        <LbNomCommunAppelTaxon>Long-beaked common dolphin</LbNomCommunAppelTaxon>
+      </NomCommunAppelTaxon>
+    </AppelTaxon>
+    </Referentiel>
+</REFERENTIELS>

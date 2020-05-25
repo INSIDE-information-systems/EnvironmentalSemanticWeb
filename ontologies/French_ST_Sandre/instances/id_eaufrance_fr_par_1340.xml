@@ -1,0 +1,181 @@
+<REFERENTIELS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xml.sandre.eaufrance.fr/scenario/referentiel/4" xsi:schemaLocation="http://xml.sandre.eaufrance.fr/scenario/referentiel/4 http://xml.sandre.eaufrance.fr/scenario/referentiel/4/sandre_sc_referentiel.xsd">
+    <Scenario>
+    <CodeScenario>REFERENTIEL</CodeScenario>
+    <VersionScenario>4</VersionScenario>
+    <NomScenario>Diffusion de listes de référence par le Sandre</NomScenario>
+    <DateCreationFichier>2020-05-18</DateCreationFichier>
+    <DateDebutReference>1987-03-20</DateDebutReference>
+    <DateFinReference>2020-05-18</DateFinReference>
+    <Emetteur>
+      <CdIntervenant schemeAgencyID="SANDRE">1470</CdIntervenant>
+      <NomIntervenant>Service d'Administration Nationale des Données et Référentiels sur l'Eau</NomIntervenant>
+    </Emetteur>
+  </Scenario>
+    <Referentiel>
+        <CdReferentiel schemeAgencyID="SANDRE">PAR</CdReferentiel>
+        <NomReferentiel>Paramètres</NomReferentiel>
+        <TypeReferentiel>1</TypeReferentiel>
+        <StReferentiel>Validé</StReferentiel>
+        <DateMajReferentiel>2020-05-18T14:41:57</DateMajReferentiel>
+        <NbOccurrences>1</NbOccurrences>
+        <Parametre>
+      <CdParametre>1340</CdParametre>
+      <NomParametre>Nitrates</NomParametre>
+      <StParametre>Validé</StParametre>
+      <AuteurParametre>DIREN de bassin ILE-de-FRANCE et CENTRE</AuteurParametre>
+      <DateCreationParametre>1987-06-01</DateCreationParametre>
+      <DateMajParametre>2017-11-23T10:14:56</DateMajParametre>
+      <DfParametre>Substance chimique de formule brute NO3-</DfParametre>
+      <NatParametre>2</NatParametre>
+      <TypeParametre>2</TypeParametre>
+      <ParametreCalcule>0</ParametreCalcule>
+      <LbCourtParametre>NO3-</LbCourtParametre>
+      <ReferenceParametre>- Recueil de normes françaises 1994, Qualité de l'eau. Paris : AFNOR, 1994.
+- Analyse des eaux, méthodes et instructions. Environnement.
+- Mémento technique de l'eau. Paris : Degrémont, 1989.
+- RODIER J. L'analyse de l'eau. 7ème éd. Paris : Dunod, 1984.</ReferenceParametre>
+      <ComParametre>Anciens codes paramètres : 73, 548.</ComParametre>
+      <GroupeParametres>
+        <CdGroupeParametres>47</CdGroupeParametres>
+        <NomGroupeParametres>Paramètres azotés</NomGroupeParametres>
+      </GroupeParametres>
+      <GroupeParametres>
+        <CdGroupeParametres>164</CdGroupeParametres>
+        <NomGroupeParametres>Paramètres physico-chimiques pour les cours d'eau</NomGroupeParametres>
+      </GroupeParametres>
+      <GroupeParametres>
+        <CdGroupeParametres>165</CdGroupeParametres>
+        <NomGroupeParametres>Paramètres physico-chimiques pour les plans d'eau</NomGroupeParametres>
+      </GroupeParametres>
+      <GroupeParametres>
+        <CdGroupeParametres>166</CdGroupeParametres>
+        <NomGroupeParametres>Paramètres de l'analyse régulière du contrôle de surveillance de l'état chimique des eaux souterraines</NomGroupeParametres>
+      </GroupeParametres>
+      <GroupeParametres>
+        <CdGroupeParametres>191</CdGroupeParametres>
+        <NomGroupeParametres>Avis relatif aux limites de quantification des couples «paramètre-matrice» de l'agrément des laboratoires effectuant des analyses dans le domaine de l'eau et des milieux aquatiques, matrice Eau douce</NomGroupeParametres>
+      </GroupeParametres>
+      <GroupeParametres>
+        <CdGroupeParametres>192</CdGroupeParametres>
+        <NomGroupeParametres>Avis relatif aux limites de quantification des couples «paramètre-matrice» de l'agrément des laboratoires effectuant des analyses dans le domaine de l'eau et des milieux aquatiques, matrice Eau résiduaire</NomGroupeParametres>
+      </GroupeParametres>
+      <GroupeParametres>
+        <CdGroupeParametres>193</CdGroupeParametres>
+        <NomGroupeParametres>Avis relatif aux limites de quantification des couples «paramètre-matrice» de l'agrément des laboratoires effectuant des analyses dans le domaine de l'eau et des milieux aquatiques, matrice Eau saline</NomGroupeParametres>
+      </GroupeParametres>
+      <Traduction>
+        <CdNomTradPar>869</CdNomTradPar>
+        <NomTradParametre>Nitrate</NomTradParametre>
+        <LangueNomTradPar>en</LangueNomTradPar>
+      </Traduction>
+      <Methode>
+        <CdMethode>342</CdMethode>
+        <TypeMethode>1</TypeMethode>
+        <NomMethode>Dosage d'anions par électrophorèse capillaire</NomMethode>
+      </Methode>
+      <Methode>
+        <CdMethode>343</CdMethode>
+        <TypeMethode>1</TypeMethode>
+        <NomMethode>Méthode d'analyse spécifique en flux continu</NomMethode>
+      </Methode>
+      <Methode>
+        <CdMethode>89</CdMethode>
+        <TypeMethode>1</TypeMethode>
+        <NomMethode>Qualité de l'eau - Dosage des nitrates - Partie 3 : Méthode spectrométrique avec l'acide sulfosalicylique (ISO 7890-3 Décembre 1988)</NomMethode>
+      </Methode>
+      <Methode>
+        <CdMethode>257</CdMethode>
+        <TypeMethode>1</TypeMethode>
+        <NomMethode>Qualité de l'eau - Détermination de l'azote nitreux et de l'azote nitrique et de la somme des deux par analyse en flux (CFA et FIA) et détection spectrométrique (NF EN ISO 13395 Octobre 1996 / T90-012)</NomMethode>
+      </Methode>
+      <Methode>
+        <CdMethode>706</CdMethode>
+        <TypeMethode>1</TypeMethode>
+        <NomMethode>Qualité de l'eau - Dosage des anions dissous par chromatographie des ions en phase liquide. Partie 1 : dosage du bromure, chlorure, fluorure, nitrate, nitrite, phosphate et sulfate. (NF EN ISO 10304-1 Juillet 2009 / T90-042-1)</NomMethode>
+      </Methode>
+      <Methode>
+        <CdMethode>568</CdMethode>
+        <TypeMethode>1</TypeMethode>
+        <NomMethode>Qualité de l'eau - Dosage du nitrate - Technique par réduction sur Cadmium et dosage du nitrite - Mise en oeuvre automatique (1975)</NomMethode>
+      </Methode>
+      <Methode>
+        <CdMethode>703</CdMethode>
+        <TypeMethode>1</TypeMethode>
+        <NomMethode>Chromatographie ionique</NomMethode>
+      </Methode>
+      <Methode>
+        <CdMethode>755</CdMethode>
+        <TypeMethode>1</TypeMethode>
+        <NomMethode>Qualité de l'eau - Dosage des nitrates et nitrites - Mesure spectrophotométrique basée sur réduction au Cadmium et réaction de Griess. Mesure en flux. (2007)</NomMethode>
+      </Methode>
+      <Methode>
+        <CdMethode>567</CdMethode>
+        <TypeMethode>1</TypeMethode>
+        <NomMethode>Qualité de l'eau - Dosage du nitrate - Technique par réduction sur Cadmium et dosage du nitrite - Mise en oeuvre manuelle (2004)</NomMethode>
+      </Methode>
+      <Synonyme>
+        <CdSynonymeParametre>586</CdSynonymeParametre>
+        <LbSynonymeParametre>Azote nitrique</LbSynonymeParametre>
+      </Synonyme>
+      <Synonyme>
+        <CdSynonymeParametre>434</CdSynonymeParametre>
+        <LbSynonymeParametre>NO3- [D]</LbSynonymeParametre>
+      </Synonyme>
+      <GenealogiePar>
+        <DateModificationPar>1987-05-31T22:00:00</DateModificationPar>
+        <TypeGenealogiePar>7</TypeGenealogiePar>
+        <ComGenealogiePar>Création</ComGenealogiePar>
+      </GenealogiePar>
+      <GenealogiePar>
+        <DateModificationPar>2016-07-04T22:00:00</DateModificationPar>
+        <TypeGenealogiePar>6</TypeGenealogiePar>
+        <ComGenealogiePar>Ajout de la (ou des) méthode(s) : [568] ; [703] ; [755] et [567].</ComGenealogiePar>
+      </GenealogiePar>
+      <GenealogiePar>
+        <DateModificationPar>2017-11-21T23:00:00</DateModificationPar>
+        <TypeGenealogiePar>6</TypeGenealogiePar>
+        <ComGenealogiePar>Suppression du commentaire :
+MAJ : ajout de la méthode [706]
+MAJ : ajout de l'unité de mesure : [395]
+MAJ : modification de la définition</ComGenealogiePar>
+      </GenealogiePar>
+      <GenealogiePar>
+        <DateModificationPar>2017-11-21T23:00:00</DateModificationPar>
+        <TypeGenealogiePar>6</TypeGenealogiePar>
+        <ComGenealogiePar>Suppression des méthodes [24], [25] et [26] en statut gelé ; les méthodes [266], [87] et [267] sont remplacées par la méthode [706].</ComGenealogiePar>
+      </GenealogiePar>
+      <ParametreChimique>
+        <CdCASSubstanceChimique>14797-55-8</CdCASSubstanceChimique>
+        <NomIUPACSubstanceChimique>nitrate</NomIUPACSubstanceChimique>
+        <FormuleBruteSubstanceChimique>NO3-</FormuleBruteSubstanceChimique>
+        <UniteMesure>
+          <CdUniteMesure>173</CdUniteMesure>
+          <LbUniteMesure>milligramme de nitrate par litre</LbUniteMesure>
+          <SymUniteMesure>mg(NO3)/L</SymUniteMesure>
+          <NatureDeFractionAnalysee>
+            <CdNatureFractionAnalysee>1</CdNatureFractionAnalysee>
+            <LbNatureFractionAnalysee>Fraction liquide</LbNatureFractionAnalysee>
+          </NatureDeFractionAnalysee>
+        </UniteMesure>
+        <UniteMesure>
+          <CdUniteMesure>395</CdUniteMesure>
+          <LbUniteMesure>milligramme d'azote par kilogramme</LbUniteMesure>
+          <SymUniteMesure>mg(N)/kg</SymUniteMesure>
+          <NatureDeFractionAnalysee>
+            <CdNatureFractionAnalysee>2</CdNatureFractionAnalysee>
+            <LbNatureFractionAnalysee>Fraction solide</LbNatureFractionAnalysee>
+          </NatureDeFractionAnalysee>
+        </UniteMesure>
+        <UniteMesure>
+          <CdUniteMesure>168</CdUniteMesure>
+          <LbUniteMesure>milligramme d'azote par litre</LbUniteMesure>
+          <SymUniteMesure>mg(N)/L</SymUniteMesure>
+          <NatureDeFractionAnalysee>
+            <CdNatureFractionAnalysee>1</CdNatureFractionAnalysee>
+            <LbNatureFractionAnalysee>Fraction liquide</LbNatureFractionAnalysee>
+          </NatureDeFractionAnalysee>
+        </UniteMesure>
+      </ParametreChimique>
+    </Parametre>
+    </Referentiel>
+</REFERENTIELS>

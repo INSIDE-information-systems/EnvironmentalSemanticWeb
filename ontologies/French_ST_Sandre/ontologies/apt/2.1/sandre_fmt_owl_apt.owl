@@ -1,0 +1,1845 @@
+<Ontology xmlns="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="http://id.eaufrance.fr/ddd/apt/2.1" ontologyIRI="http://id.eaufrance.fr/ddd/apt/2.1" versionIRI="http://id.eaufrance.fr/ddd/apt/2.1">
+    <Prefix name="" IRI="http://id.eaufrance.fr/ddd/apt/2.1"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="dwc" IRI="https://dwc.tdwg.org/terms/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="xsi" IRI="http://www.w3.org/2001/XMLSchema-instance"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:contributor"/>
+        <Literal xml:lang="fr"/>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:coverage"/>
+        <Literal xml:lang="fr">France</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+        <Literal xml:lang="fr">2013-06-05</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal xml:lang="fr">http://id.eaufrance.fr/int/1470</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <Literal xml:lang="fr">Ce dictionnaire de données a trait aux données caractéristiques des appellations taxonomiques. Un taxon est une unité générique qui fait référence à la systématique. Un taxon peut disposer de plusieurs appellations taxonomiques dont une est dite de référence. En raison de l'instabilité des systèmes internationaux de classification des êtres vivants, depuis la version 2.0 du dictionnaire, le Sandre est chargé d'administrer un référentiel d'appellation taxonomique et non plus de taxons, si bien que les appellations de type synonyme sont codifiées.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:format"/>
+        <Literal xml:lang="fr">owl/xml</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <Literal xml:lang="fr">http://creativecommons.org/licenses/by-nd/3.0/fr</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:modified"/>
+        <Literal xml:lang="fr">2013-09-05</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+        <Literal xml:lang="fr">Ministère chargé de l'environnement</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:subject"/>
+        <Literal xml:lang="fr">Référentiel</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="fr">Référentiel des appellations taxonomiques</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:valid"/>
+        <Literal xml:lang="fr">2013-08-22</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal xml:lang="fr">apt</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="fr">Ce dictionnaire de données a trait aux données caractéristiques des appellations taxonomiques. Un taxon est une unité générique qui fait référence à la systématique. Un taxon peut disposer de plusieurs appellations taxonomiques dont une est dite de référence. En raison de l'instabilité des systèmes internationaux de classification des êtres vivants, depuis la version 2.0 du dictionnaire, le Sandre est chargé d'administrer un référentiel d'appellation taxonomique et non plus de taxons, si bien que les appellations de type synonyme sont codifiées.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en">Référentiel des appellations taxonomiques</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="fr">Référentiel des appellations taxonomiques</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="fr">2.1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="fr">Evolution référentiel 2.0 -&gt; 2.1 :
+		                                                                                                          - Création de la classe GROUPE D'APPELLATION TAXONOMIQUE
+		                                                                                                          - Ajout d'un attribut "Numéro hiérarchique du niveau taxonomique" dans la classe NIVEAU TAXONOMIQUE
+		                                                                                                          - Héritage entre TAXON et APPELLATION TAXONOMIQUE remplacé par une association 1,n - 1,1
+		                                                                                                          - Ajout de l'attribut "Type d'appellation de taxon" dans la classe APPELLATION DE TAXON
+		                                                                                                          
+		                                                                                                          Evolution 2.1--&gt;2.2
+		                                                                                                          TODO : modification de la définition de Libellé du nom commun de l'appellation du taxon car elle doit être en adéquation avec le fait qu'une appellation de taxon peut avoir avoir plusieurs libellés courants.
+		                                                                                                          YM Modifier les cardinalités entre CODE ALTERNATIF et APPELLATION DE TAXON
+		                                                                                                          et sur la relation réflexive "Est synonyme"
+		                                                                                                          
+		                                                                                                          
+		                                                                                                          
+		                                                                                                          </Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="/AppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CodeAlternatif"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/GrpAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/NiveauTaxonomique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/NomCommunAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Taxon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ThemeTaxon"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dwc:taxon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/AppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/AppelTaxonElt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/AppelTaxonSyno"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/CodeAlternatifAp"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/EltAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/GrpAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/GrpAppelTaxonEnfant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/GrpAppelTaxonParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/NiveauTaxonomiqueAppel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/NomCommunAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/SynoAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/Taxon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/ThemeTaxonAppel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/AbTax"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/AuteurAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/AuteurGrpAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/AuteurTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/CdAlternatif"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/CdAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/CdGrpAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/CdTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/CdThemeTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/ComAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/ComGrpAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/CommentairesTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/DateCreGrpAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/DateCreationAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/DateCreationTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/DateMajAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/DateMajGrpAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/DateMajTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/DfGrpAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/HierNiveauTaxonomique"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/IdCdAlternatif"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/IdNomCommunAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/LbCourtGrpAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/LbLongGrpAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/LbNiveauTaxonomique"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/LbNomCommunAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/LbThemeTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/NomCommunTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/NomGrpAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/NomLatinAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/NomLatinTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/OrgCdAlternatif"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/RedacteurFicheAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/RedacteurFicheTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/RefBiblioAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/RefBiblioTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/StAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/StGrpAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/StTaxon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/TypeAppelTaxon"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:valid"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:coverage"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:subject"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:format"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://rs.tdwg.org/dwc/terms/taxonID"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/AppelTaxon"/>
+        <Class IRI="/Taxon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AppelTaxon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/AppelTaxonElt"/>
+            <Class IRI="/AppelTaxon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AppelTaxon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/AppelTaxonSyno"/>
+            <Class IRI="/AppelTaxon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AppelTaxon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/CodeAlternatifAp"/>
+            <Class IRI="/CodeAlternatif"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AppelTaxon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/GrpAppelTaxon"/>
+            <Class IRI="/GrpAppelTaxon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AppelTaxon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/NomCommunAppelTaxon"/>
+            <Class IRI="/NomCommunAppelTaxon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AppelTaxon"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/NiveauTaxonomiqueAppel"/>
+            <Class IRI="/NiveauTaxonomique"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AppelTaxon"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/Taxon"/>
+            <Class IRI="/Taxon"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AppelTaxon"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/ThemeTaxonAppel"/>
+            <Class IRI="/ThemeTaxon"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AppelTaxon"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/EltAppelTaxon"/>
+            <Class IRI="/AppelTaxon"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AppelTaxon"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/SynoAppelTaxon"/>
+            <Class IRI="/AppelTaxon"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CodeAlternatif"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="/AppelTaxon"/>
+            <Class IRI="/AppelTaxon"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/GrpAppelTaxon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/AppelTaxon"/>
+            <Class IRI="/AppelTaxon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/GrpAppelTaxon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/GrpAppelTaxonEnfant"/>
+            <Class IRI="/GrpAppelTaxon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/GrpAppelTaxon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/GrpAppelTaxonParent"/>
+            <Class IRI="/GrpAppelTaxon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/NiveauTaxonomique"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/AppelTaxon"/>
+            <Class IRI="/AppelTaxon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/NomCommunAppelTaxon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/AppelTaxon"/>
+            <Class IRI="/AppelTaxon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Taxon"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/AppelTaxon"/>
+            <Class IRI="/AppelTaxon"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ThemeTaxon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/AppelTaxon"/>
+            <Class IRI="/AppelTaxon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/AppelTaxon"/>
+        <Class IRI="/CodeAlternatif"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/AppelTaxon"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/AppelTaxon"/>
+        <Class IRI="/NiveauTaxonomique"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/AppelTaxon"/>
+        <Class IRI="/NomCommunAppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/AppelTaxon"/>
+        <Class IRI="/Taxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/AppelTaxon"/>
+        <Class IRI="/ThemeTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/AppelTaxonElt"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/AppelTaxonSyno"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/CodeAlternatifAp"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/EltAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/GrpAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/GrpAppelTaxonEnfant"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/GrpAppelTaxonParent"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/NiveauTaxonomiqueAppel"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/NomCommunAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/SynoAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/Taxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/ThemeTaxonAppel"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/AppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/AppelTaxonElt"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/AppelTaxonSyno"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/CodeAlternatifAp"/>
+        <Class IRI="/CodeAlternatif"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/EltAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/GrpAppelTaxon"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/GrpAppelTaxonEnfant"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/GrpAppelTaxonParent"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/NiveauTaxonomiqueAppel"/>
+        <Class IRI="/NiveauTaxonomique"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/NomCommunAppelTaxon"/>
+        <Class IRI="/NomCommunAppelTaxon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/SynoAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/Taxon"/>
+        <Class IRI="/Taxon"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/ThemeTaxonAppel"/>
+        <Class IRI="/ThemeTaxon"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/AbTax"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/AuteurAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/AuteurGrpAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/AuteurTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/CdAlternatif"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/CdAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/CdGrpAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/CdTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/CdThemeTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/ComAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/ComGrpAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/CommentairesTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DateCreGrpAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DateCreationAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DateCreationTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DateMajAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DateMajGrpAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DateMajTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DfGrpAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/HierNiveauTaxonomique"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/IdCdAlternatif"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/IdNomCommunAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/LbCourtGrpAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/LbLongGrpAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/LbNiveauTaxonomique"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/LbNomCommunAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/LbThemeTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/NomCommunTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/NomGrpAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/NomLatinAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/NomLatinTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/OrgCdAlternatif"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/RedacteurFicheAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/RedacteurFicheTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/RefBiblioAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/RefBiblioTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/StAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/StGrpAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/StTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="/TypeAppelTaxon"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://rs.tdwg.org/dwc/terms/taxonID"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="/AbTax"/>
+        <Class IRI="/NiveauTaxonomique"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/AuteurAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/AuteurGrpAppelTaxon"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/AuteurTaxon"/>
+        <Class IRI="/Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/CdAlternatif"/>
+        <Class IRI="/CodeAlternatif"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/CdAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/CdGrpAppelTaxon"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/CdTaxon"/>
+        <Class IRI="/Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/CdThemeTaxon"/>
+        <Class IRI="/ThemeTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/ComAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/ComGrpAppelTaxon"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/CommentairesTaxon"/>
+        <Class IRI="/Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/DateCreGrpAppelTaxon"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/DateCreationAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/DateCreationTaxon"/>
+        <Class IRI="/Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/DateMajAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/DateMajGrpAppelTaxon"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/DateMajTaxon"/>
+        <Class IRI="/Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/DfGrpAppelTaxon"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/HierNiveauTaxonomique"/>
+        <Class IRI="/NiveauTaxonomique"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/IdCdAlternatif"/>
+        <Class IRI="/CodeAlternatif"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/IdNomCommunAppelTaxon"/>
+        <Class IRI="/NomCommunAppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/LbCourtGrpAppelTaxon"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/LbLongGrpAppelTaxon"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/LbNiveauTaxonomique"/>
+        <Class IRI="/NiveauTaxonomique"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/LbNomCommunAppelTaxon"/>
+        <Class IRI="/NomCommunAppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/LbThemeTaxon"/>
+        <Class IRI="/ThemeTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/NomCommunTaxon"/>
+        <Class IRI="/Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/NomGrpAppelTaxon"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/NomLatinAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/NomLatinTaxon"/>
+        <Class IRI="/Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/OrgCdAlternatif"/>
+        <Class IRI="/CodeAlternatif"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/RedacteurFicheAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/RedacteurFicheTaxon"/>
+        <Class IRI="/Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/RefBiblioAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/RefBiblioTaxon"/>
+        <Class IRI="/Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/StAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/StGrpAppelTaxon"/>
+        <Class IRI="/GrpAppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/StTaxon"/>
+        <Class IRI="/Taxon"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/TypeAppelTaxon"/>
+        <Class IRI="/AppelTaxon"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="/AbTax"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/AuteurAppelTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/AuteurGrpAppelTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/AuteurTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/CdAlternatif"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/CdAppelTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/CdGrpAppelTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/CdTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/CdThemeTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/ComAppelTaxon"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/ComGrpAppelTaxon"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/CommentairesTaxon"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/DateCreGrpAppelTaxon"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/DateCreationAppelTaxon"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/DateCreationTaxon"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/DateMajAppelTaxon"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/DateMajGrpAppelTaxon"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/DateMajTaxon"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/DfGrpAppelTaxon"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/HierNiveauTaxonomique"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/IdCdAlternatif"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/IdNomCommunAppelTaxon"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/LbCourtGrpAppelTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/LbLongGrpAppelTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/LbNiveauTaxonomique"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/LbNomCommunAppelTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">255</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/LbThemeTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/NomCommunTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/NomGrpAppelTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">255</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/NomLatinAppelTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">255</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/NomLatinTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">255</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/OrgCdAlternatif"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/RedacteurFicheAppelTaxon"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/RedacteurFicheTaxon"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/RefBiblioAppelTaxon"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/RefBiblioTaxon"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/StAppelTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/StGrpAppelTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/StTaxon"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/TypeAppelTaxon"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <HasKey>
+        <Class IRI="/AppelTaxon"/>
+        <DataProperty IRI="/CdAppelTaxon"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="/CodeAlternatif"/>
+        <DataProperty IRI="/IdCdAlternatif"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="/GrpAppelTaxon"/>
+        <DataProperty IRI="/CdGrpAppelTaxon"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="/NomCommunAppelTaxon"/>
+        <DataProperty IRI="/IdNomCommunAppelTaxon"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="/Taxon"/>
+        <DataProperty IRI="/CdTaxon"/>
+    </HasKey>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#StParametre</IRI>
+        <Literal xml:lang="fr">http://id.eaufrance.fr/nsa/121</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#StParametre</IRI>
+        <Literal xml:lang="fr">http://id.eaufrance.fr/nsa/222</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#StParametre</IRI>
+        <Literal xml:lang="fr">http://id.eaufrance.fr/nsa/390</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#StParametre</IRI>
+        <Literal xml:lang="fr">http://id.eaufrance.fr/nsa/621</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#StParametre</IRI>
+        <Literal xml:lang="fr">http://id.eaufrance.fr/nsa/748</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/AbTax</IRI>
+        <Literal xml:lang="fr">Code attribué à chaque niveau systématique tel que défini dans la nomenclature n°222.
+
+La liste des niveaux taxonomiques est sous la responsabilité du SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/AbTax</IRI>
+        <Literal xml:lang="fr">Abréviation taxonomique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/AppelTaxon</IRI>
+        <Literal xml:lang="fr">Désignation d'un taxon qui est une unité générique qui fait référence à la systématique - forme de classification dérivant du même ancêtre. Selon qu'on remonte plus ou moins haut dans l'origine du taxon, on aura des taxons supérieurs (embranchements, classes) ou des taxon inférieurs (genres, espèces, races). Il arrive que la découverte d'un taxon attribuée à un chercheur soit remise en cause par un autre, ce qui conduit à une appellation d'un taxon à être vue comme :
+- "référente" vis à vis d'autres appellations synonymes,
+- "synonyme" d'une autre appellation référente.
+
+
+La liste des appellations des taxons est administrée par le SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/AppelTaxon</IRI>
+        <Literal xml:lang="fr">APPELLATION DU TAXON</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/AppelTaxon</IRI>
+        <Literal xml:lang="fr">Désignation d'un taxon qui est une unité générique qui fait référence à la systématique - forme de classification dérivant du même ancêtre. Selon qu'on remonte plus ou moins haut dans l'origine du taxon, on aura des taxons supérieurs (embranchements, classes) ou des taxon inférieurs (genres, espèces, races). Il arrive que la découverte d'un taxon attribuée à un chercheur soit remise en cause par un autre, ce qui conduit à une appellation d'un taxon à être vue comme :
+- "référente" vis à vis d'autres appellations synonymes,
+- "synonyme" d'une autre appellation référente.
+
+
+La liste des appellations des taxons est administrée par le SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>/AppelTaxon</IRI>
+        <Literal xml:lang="fr">Classe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/AuteurAppelTaxon</IRI>
+        <Literal xml:lang="fr">Nom de la personne qui décrit le première fois de l'appellation du taxon suivi de l'année de la description.
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'une nouvelle appellation du taxon auprès du SANDRE qui a en la responsabilité. Cette information peut être complétée par les mises-à-jour successives de la fiche descriptive de l'appellation du taxon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/AuteurAppelTaxon</IRI>
+        <Literal xml:lang="fr">Auteur de l'appellation du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/AuteurGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Premier organisme à avoir demandé au Sandre l'enregistrement du  groupe d'appellation taxonomique
+
+L'attribution d'un auteur à un  groupe d'appellation taxonomique relève de la responsabilité du Sandre.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/AuteurGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Auteur de la demande de création du  groupe d'appellation taxonomique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/AuteurTaxon</IRI>
+        <Literal xml:lang="fr">Nom de la personne qui décrit le première fois le taxon suivi de l'année de la description.
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'un nouveau taxon auprès du SANDRE qui a la responsabilité de la liste des taxons. Cette information peut être complétée par les mises-à-jour successives de la fiche descriptive du taxon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/AuteurTaxon</IRI>
+        <Literal xml:lang="fr">Auteur du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CdAlternatif</IRI>
+        <Literal xml:lang="fr">Valeur du code associé à une appellation de taxon dans un contexte particulier (Banque Hydrobiologique et Piscicole, Code Poisson, ...).
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'une nouvelle appellation de taxon auprès du SANDRE qui a la responsabilité de la liste des taxons. Cette information peut être complétée par les mises à jour successives de la fiche descriptive de l'appellation du taxon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/CdAlternatif</IRI>
+        <Literal xml:lang="fr">Code alternatif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CdAppelTaxon</IRI>
+        <Literal xml:lang="fr">Identifiant non signifiant de l'appellation du taxon attribué par le SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/CdAppelTaxon</IRI>
+        <Literal xml:lang="fr">Code de l'appellation du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CdGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Identifiant unique non signifiant du  groupe d'appellation taxonomique. Il est administré par le Sandre.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/CdGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Code du groupe d'appellation taxonomique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CdTaxon</IRI>
+        <Literal xml:lang="fr">Identifiant non signifiant attribué par le SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/CdTaxon</IRI>
+        <Literal xml:lang="fr">Code du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CdThemeTaxon</IRI>
+        <Literal xml:lang="fr">Identifiant attribué à chaque thème tel que défini dans la nomenclature n°121.
+
+La liste des thèmes des appellations des taxons relève de la responsabilité du SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/CdThemeTaxon</IRI>
+        <Literal xml:lang="fr">Code du thème des taxons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CodeAlternatif</IRI>
+        <Literal xml:lang="fr">Code associé à l'appellation du taxon, différent de celui de l'entité "APPELLATION DE TAXON" et par lequel un utilisateur peut accéder à une occurrence de cette dernière entité. Il ne s'agit pas de prendre en compte toutes les codifications qui existent  mais de concilier des approches différentes.
+
+A titre d'exemple, il existe une codification des poissons et des diatomées qui est rentrée dans les moeurs; elle ne peut être ignorée par le SANDRE. Afin de rapprocher le référentiel national des taxons à celui des banques de données, il est nécessaire de pouvoir établir des correspondances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/CodeAlternatif</IRI>
+        <Literal xml:lang="fr">CODE ALTERNATIF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/CodeAlternatif</IRI>
+        <Literal xml:lang="fr">Code associé à l'appellation du taxon, différent de celui de l'entité "APPELLATION DE TAXON" et par lequel un utilisateur peut accéder à une occurrence de cette dernière entité. Il ne s'agit pas de prendre en compte toutes les codifications qui existent  mais de concilier des approches différentes.
+
+A titre d'exemple, il existe une codification des poissons et des diatomées qui est rentrée dans les moeurs; elle ne peut être ignorée par le SANDRE. Afin de rapprocher le référentiel national des taxons à celui des banques de données, il est nécessaire de pouvoir établir des correspondances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>/CodeAlternatif</IRI>
+        <Literal xml:lang="fr">Classe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ComAppelTaxon</IRI>
+        <Literal xml:lang="fr">Ensemble des informations complémentaires relatif à l'appellation du taxon qu'il peut être intéressant de porter à la connaissance du lecteur et qui ne sont pas formalisées dans la fiche de l'appellation du taxon.
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'une nouvelle apellation de taxon auprès du SANDRE qui en a la responsabilité. Cette information peut être complétée par les mises-à-jour successives de la fiche de description de l'appellation du taxon. .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ComAppelTaxon</IRI>
+        <Literal xml:lang="fr">Commentaires sur l'appellation du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ComGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Informations supplémentaires relatives au  groupe d'appellation taxonomique et qu'il peut être intéressant de porter à la connaissance du lecteur.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ComGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Commentaires sur le groupe d'appellation taxonomique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/CommentairesTaxon</IRI>
+        <Literal xml:lang="fr">Ensemble des informations complémentaires relatif au taxon qu'il peut être intéressant de porter à la connaissance du lecteur et qui ne sont pas formalisées dans la fiche taxon.
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'un nouveau taxon auprès du SANDRE qui a la responsabilité de la liste des taxons. Cette information peut être complétée par les mises-à-jour successives de la fiche descriptive du taxon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/CommentairesTaxon</IRI>
+        <Literal xml:lang="fr">Commentaires sur le taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/DateCreGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Indication du jour, du mois, de l'année, à laquelle un  groupe d'appellation taxonomique a été créé. L'affectation d'une date de création  relève de la responsabilité du Sandre.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/DateCreGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Date de création du groupe d'appellation taxonomique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/DateCreationAppelTaxon</IRI>
+        <Literal xml:lang="fr">Indication du jour, du mois et de l'année, à laquelle l'appellation du taxon a été créé dans la liste nationale des appellation de taxons. L'affectation d'une date de création relève de la responsabilité du SANDRE.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/DateCreationAppelTaxon</IRI>
+        <Literal xml:lang="fr">Date de création de l'appellation du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/DateCreationTaxon</IRI>
+        <Literal xml:lang="fr">Date exprimée au jour près, à laquelle un taxon a été créé dans la liste nationale des taxons.
+
+L'affectation d'une date de création à un taxon relève de la responsabilité du SANDRE.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/DateCreationTaxon</IRI>
+        <Literal xml:lang="fr">Date de création du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/DateMajAppelTaxon</IRI>
+        <Literal xml:lang="fr">Indication du jour, du mois et de l'année, de la dernière mise-à-jour validée des informations portées sur la fiche de description de l'appellation du taxon. L'affectation de la date de la dernière mise-à-jour relève de la responsabilité du SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/DateMajAppelTaxon</IRI>
+        <Literal xml:lang="fr">Date de la dernière mise-à-jour de l'appellation du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/DateMajGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Indication du jour, du mois et de l'année , de la dernière mise à jour validée des informations portées sur la fiche de description ou sur le contenu du  groupe d'appellation taxonomique en question. 
+
+L'affectation de la date de la dernière mise-à-jour à un  groupe d'appellation taxonomique relève de la responsabilité du Sandre.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/DateMajGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Date de dernière mise à jour du  groupe d'appellation taxonomique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/DateMajTaxon</IRI>
+        <Literal xml:lang="fr">Date exprimée au jour près, de la dernière mise-à-jour validée des informations portées sur la fiche de description du taxon.
+
+L'affectation de la date de la dernière mise-à-jour à un taxon relève de la responsabilité du SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/DateMajTaxon</IRI>
+        <Literal xml:lang="fr">Date de la dernière mise-à-jour du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/DfGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Enoncé qui permet une bonne compréhension du contenu du  groupe d'appellation taxonomique.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/DfGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Définition du groupe d'appellation taxonomique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/GrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Un groupe d'appellation de taxon est un ensemble d'appellation de taxons présentant des caractéristiques communes. Les critères permettant de définir des groupes d'appellation de taxon peuvent être complexes et multiples. Ces critères sont en rapport avec la finalité pour laquelle un regroupement de taxons est défini.
+Un groupe d'appellation de taxon peut contenir plusieurs sous-groupes, selon un ordre hiérarchique pouvant aller jusqu'à plusieurs niveaux inférieurs. Un groupe d'appellation de taxon peut être rattaché à plusieurs groupes d'appellation de taxon parents.
+Les différents groupes d'appellation de taxon sont administrés par le Sandre. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/GrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">GROUPE D'APPELLATION TAXONOMIQUE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/GrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Un groupe d'appellation de taxon est un ensemble d'appellation de taxons présentant des caractéristiques communes. Les critères permettant de définir des groupes d'appellation de taxon peuvent être complexes et multiples. Ces critères sont en rapport avec la finalité pour laquelle un regroupement de taxons est défini.
+Un groupe d'appellation de taxon peut contenir plusieurs sous-groupes, selon un ordre hiérarchique pouvant aller jusqu'à plusieurs niveaux inférieurs. Un groupe d'appellation de taxon peut être rattaché à plusieurs groupes d'appellation de taxon parents.
+Les différents groupes d'appellation de taxon sont administrés par le Sandre. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>/GrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Classe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/HierNiveauTaxonomique</IRI>
+        <Literal xml:lang="fr">Numéro indiquant l'ordre hiérarchique des niveaux taxonomiques,  commençant par 1 pour le niveau Règne.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/HierNiveauTaxonomique</IRI>
+        <Literal xml:lang="fr">Numéro hiérarchique du niveau taxonomique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/IdCdAlternatif</IRI>
+        <Literal xml:lang="fr">Indication qui identifie de façon unique le code alternatif ; il est artificiel et non signifiant.
+
+Il est justifié par le fait qu'un code alternatif ne peut être identifiant de cette entité. En effet, un code alternatif n'est pas obligatoirement unique puisqu'il peut identifier une ou plusieurs occurrences différentes de l'entité APPELLATION DE TAXON dans au moins deux contextes différents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/IdCdAlternatif</IRI>
+        <Literal xml:lang="fr">Identifiant du code alternatif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/IdNomCommunAppelTaxon</IRI>
+        <Literal xml:lang="fr">Code permettant d'identifier de manière unique chaque nom commun d'appellation de taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/IdNomCommunAppelTaxon</IRI>
+        <Literal xml:lang="fr">Identifiant du nom commun de l'appellation du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/LbCourtGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Diminutif, de préférence unique, du  groupe d'appellation taxonomique. Cet attribut créé à des fins d'exploitation informatique peut contenir des sigles ou des abréviations explicités dans le nom du  groupe d'appellation taxonomique.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/LbCourtGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Libellé court du groupe d'appellation taxonomique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/LbLongGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Nom long du  groupe d'appellation taxonomique. Cet attribut créé à des fins d'exploitation informatique peut contenir des sigles ou des abréviations explicités dans le nom du  groupe d'appellation taxonomique.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/LbLongGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Libellé long du groupe d'appellation taxonomique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/LbNiveauTaxonomique</IRI>
+        <Literal xml:lang="fr">Libellé de chaque niveau systématique tel que défini dans la nomenclature n°222.
+
+La liste des niveaux taxonomiques est sous la responsabilité du SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/LbNiveauTaxonomique</IRI>
+        <Literal xml:lang="fr">Niveau taxonomique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/LbNomCommunAppelTaxon</IRI>
+        <Literal xml:lang="fr">Appellation la  plus couramment utilisée pour désigner le taxon.
+
+Le renseignement de cette donnée est facultatif  car un taxon ne possède pas systématiquement de nom commun.
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'un nouveau taxon auprès du SANDRE qui a la responsabilité de la liste des taxons. Cette information peut être complétée par les mises-à-jour successives de la fiche descriptive du taxon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/LbNomCommunAppelTaxon</IRI>
+        <Literal xml:lang="fr">Libellé du nom commun de l'appellation du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/LbThemeTaxon</IRI>
+        <Literal xml:lang="fr">Nom attribué à chaque thème.
+
+
+La liste des thèmes des appellations des taxons relève de la responsabilité du SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/LbThemeTaxon</IRI>
+        <Literal xml:lang="fr">Libellé du thème des taxons</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/NiveauTaxonomique</IRI>
+        <Literal xml:lang="fr">Classification hiérarchique des appellations des taxons, chaque niveau systématique est défini dans la nomenclature n°222. La liste des niveaux taxonomiques est sous la responsabilité du SANDRE.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/NiveauTaxonomique</IRI>
+        <Literal xml:lang="fr">NIVEAU TAXONOMIQUE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/NiveauTaxonomique</IRI>
+        <Literal xml:lang="fr">Classification hiérarchique des appellations des taxons, chaque niveau systématique est défini dans la nomenclature n°222. La liste des niveaux taxonomiques est sous la responsabilité du SANDRE.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>/NiveauTaxonomique</IRI>
+        <Literal xml:lang="fr">Classe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/NomCommunAppelTaxon</IRI>
+        <Literal xml:lang="fr">Appellation la  plus couramment utilisée pour désigner le taxon.
+
+Le renseignement de cette donnée est facultatif  car un taxon ne possède pas systématiquement de nom commun.
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'un nouveau taxon auprès du SANDRE qui a la responsabilité de la liste des taxons. Cette information peut être complétée par les mises-à-jour successives de la fiche descriptive du taxon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/NomCommunAppelTaxon</IRI>
+        <Literal xml:lang="fr">NOM COMMUN DE l'APPELLATION DE TAXON</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/NomCommunAppelTaxon</IRI>
+        <Literal xml:lang="fr">Appellation la  plus couramment utilisée pour désigner le taxon.
+
+Le renseignement de cette donnée est facultatif  car un taxon ne possède pas systématiquement de nom commun.
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'un nouveau taxon auprès du SANDRE qui a la responsabilité de la liste des taxons. Cette information peut être complétée par les mises-à-jour successives de la fiche descriptive du taxon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>/NomCommunAppelTaxon</IRI>
+        <Literal xml:lang="fr">Classe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/NomCommunTaxon</IRI>
+        <Literal xml:lang="fr">Nom le plus couramment utilisé pour désigner le taxon.
+
+Le renseignement de cette donnée est facultatif  car un taxon ne possède pas systématiquement de nom commun.
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'un nouveau taxon auprès du SANDRE qui a la responsabilité de la liste des taxons. Cette information peut être complétée par les mises-à-jour successives de la fiche descriptive du taxon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/NomCommunTaxon</IRI>
+        <Literal xml:lang="fr">Nom commun du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/NomGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Appellation commune du  groupe d'appellation taxonomique. Cet attribut peut comporter des abréviations explicites. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/NomGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Nom du groupe d'appellation taxonomique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/NomLatinAppelTaxon</IRI>
+        <Literal xml:lang="fr">Designation latine également qualifiée de nom scientifique de l'appellation du taxon. Pour éviter toute confusion à propos des espèces, celles-ci auront comme nom latin la composition du nom latin de l'espèce et du nom latin du genre.
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'un nouveau taxon auprès du SANDRE qui a la responsabilité de la liste des taxons. Cette information peut être complétée par les mises-à-jour successives de la fiche descriptive de l'appellation du taxon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/NomLatinAppelTaxon</IRI>
+        <Literal xml:lang="fr">Nom latin de l'appellation du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/NomLatinTaxon</IRI>
+        <Literal xml:lang="fr">Appellation latine également qualifiée de nom scientifique. Pour éviter toute confusion à propos des espèces, celles-ci auront comme nom latin la composition du nom latin de l'espèce et du nom latin du genre.
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'un nouveau taxon auprès du SANDRE qui a la responsabilité de la liste des taxons. Cette information peut être complétée par les mises-à-jour successives de la fiche descriptive du taxon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/NomLatinTaxon</IRI>
+        <Literal xml:lang="fr">Nom latin du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/OrgCdAlternatif</IRI>
+        <Literal xml:lang="fr">Contexte dans lequel le code alternatif est couramment employé.
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'une nouvelle appellation de taxon auprès du SANDRE qui a la responsabilité de la liste des taxons. Cette information peut être complétée par les mises à jour successives de la fiche descriptive de l'appellation du taxon.
+
+La liste des valeurs possibles est définie dans la nomenclature n°621.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/OrgCdAlternatif</IRI>
+        <Literal xml:lang="fr">Origine du code alternatif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/RedacteurFicheAppelTaxon</IRI>
+        <Literal xml:lang="fr">Premier organisme à avoir demandé au SANDRE l'enregistrement de l'appellation du taxon. Le renseignement de cette donnée est obligatoire. Cet attribut ne sera pas actualisé à la suite des actualisations éventuelles de la fiche de description de l'appellation du taxon. 
+
+L'attribution d'un auteur à un taxon relève de la responsabilité du SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/RedacteurFicheAppelTaxon</IRI>
+        <Literal xml:lang="fr">Rédacteur de la fiche de l'appellation du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/RedacteurFicheTaxon</IRI>
+        <Literal xml:lang="fr">Premier organisme à avoir demandé au SANDRE l'enregistrement du taxon.
+
+Le renseignement de cette donnée est obligatoire.
+
+Cet attribut ne sera pas actualisé à la suite des actualisations éventuelles de la fiche.
+
+L'attribution d'un auteur à un taxon relève de la responsabilité du SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/RedacteurFicheTaxon</IRI>
+        <Literal xml:lang="fr">Rédacteur de la fiche sur le taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/RefBiblioAppelTaxon</IRI>
+        <Literal xml:lang="fr">Sources documentaires ou autres qui contiennent toutes les informations nécessaires quant à l'identification et la détermination de l'appellation du taxon.
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'une nouvelle appellation du taxon auprès du SANDRE qui en a la responsabilité. Cette information peut être complétée par les mises-à-jour successives de la fiche de description de l'appellation du taxon. .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/RefBiblioAppelTaxon</IRI>
+        <Literal xml:lang="fr">Références bibliographiques de l'appellation du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/RefBiblioTaxon</IRI>
+        <Literal xml:lang="fr">Sources documentaires ou autres qui contiennent toutes les informations nécessaires quant à l'identification et la détermination du taxon.
+
+Cette information est fournie par le ou les organismes qui déposent une demande d'enregistrement d'un nouveau taxon auprès du SANDRE qui a la responsabilité de la liste des taxons. Cette information peut être complétée par les mises-à-jour successives de la fiche descriptive du taxon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/RefBiblioTaxon</IRI>
+        <Literal xml:lang="fr">Références bibliographiques sur le taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/StAppelTaxon</IRI>
+        <Literal xml:lang="fr">Degré de validité d'une appellation du taxon affecté par le SANDRE. La liste des valeurs autorisées est définie par le Sandre dans la nomenclature n°390.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/StAppelTaxon</IRI>
+        <Literal xml:lang="fr">Statut de l'appellation du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/StGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Degré de validité d'un  groupe d'appellation taxonomique affecté par le SANDRE. La liste des valeurs autorisées est définie par le Sandre dans la nomenclature n°390.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/StGrpAppelTaxon</IRI>
+        <Literal xml:lang="fr">Statut du groupe d'appellation taxonomique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/StTaxon</IRI>
+        <Literal xml:lang="fr">Degré de validité d'un taxon affecté par le SANDRE. La liste des valeurs autorisées est définie par le Sandre dans la nomenclature n°390.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/StTaxon</IRI>
+        <Literal xml:lang="fr">Statut du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Taxon</IRI>
+        <Literal xml:lang="fr">Le taxon est une unité générique qui fait référence à la systématique. Cette science établit une classification des êtres vivants à partir de critères de ressemblance suivant une structure arborescente et hiérarchique à plusieurs niveaux (règne, embranchement, ordre, famille, genre, espèce...) dont chaque élément ou composante est qualifié de taxon.
+
+La liste des taxons est administrée par le SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Taxon</IRI>
+        <Literal xml:lang="fr">TAXON</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/Taxon</IRI>
+        <Literal xml:lang="fr">Le taxon est une unité générique qui fait référence à la systématique. Cette science établit une classification des êtres vivants à partir de critères de ressemblance suivant une structure arborescente et hiérarchique à plusieurs niveaux (règne, embranchement, ordre, famille, genre, espèce...) dont chaque élément ou composante est qualifié de taxon.
+
+La liste des taxons est administrée par le SANDRE.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>/Taxon</IRI>
+        <Literal xml:lang="fr">Classe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/ThemeTaxon</IRI>
+        <Literal xml:lang="fr">Classification des appellations des taxons suivant leur nature et les utilisations qui en sont faites. 
+
+La liste des thèmes des appellations taxons relève de la responsabilité du SANDRE. Les thèmes sont décrits dans la nomenclature n°121.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/ThemeTaxon</IRI>
+        <Literal xml:lang="fr">THEME DES TAXONS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/ThemeTaxon</IRI>
+        <Literal xml:lang="fr">Classification des appellations des taxons suivant leur nature et les utilisations qui en sont faites. 
+
+La liste des thèmes des appellations taxons relève de la responsabilité du SANDRE. Les thèmes sont décrits dans la nomenclature n°121.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>/ThemeTaxon</IRI>
+        <Literal xml:lang="fr">Classe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/TypeAppelTaxon</IRI>
+        <Literal xml:lang="fr">Cet attribut indique si l'appellation taxonomique est référente ou synonyme au regard de la systématique.
+
+La liste des valeurs est définie dans la nomenclature n°748.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/TypeAppelTaxon</IRI>
+        <Literal xml:lang="fr">Type d'appellation du taxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://rs.tdwg.org/dwc/terms/taxonID</IRI>
+        <Literal xml:lang="fr">Un identifiant pour l'ensemble des informations sur le taxon (données associées à la classe Taxon). Peut être un identifiant unique global ou un identifiant spécifique à l'ensemble de données selon le DarwinCore.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://rs.tdwg.org/dwc/terms/taxonID</IRI>
+        <Literal xml:lang="fr">Identification du taxon DWC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dwc:taxon</AbbreviatedIRI>
+        <Literal xml:lang="fr">Un groupe d'organismes (au sens http://purl.obolibrary.org/obo/OBI_0100026) considérés par les taxonomistes comme formant une unité homogène par le DarwinCore.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dwc:taxon</AbbreviatedIRI>
+        <Literal xml:lang="fr">Taxon DWC</Literal>
+    </AnnotationAssertion>
+</Ontology><!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->

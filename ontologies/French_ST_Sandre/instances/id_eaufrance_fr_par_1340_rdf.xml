@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:ns5="http://owl.sandre.eaufrance.fr/par/2.3#"
+	xmlns:par="http://id.eaufrance.fr/ddd/par/3/" >
+  <rdf:Description rdf:about="http://id.eaufrance.fr/par/1340">
+    <rdf:type rdf:resource="http://owl.sandre.eaufrance.fr/par/2.3#Parametre" />
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
+    <rdf:type rdf:resource="http://owl.sandre.eaufrance.fr/par/2.3#ParametreChimique" />
+    <rdf:type>http://id.eaufrance.fr/ddd/PAR/Parametre</rdf:type>
+    <rdfs:label>Nitrates</rdfs:label>
+    <rdfs:comment>Substance chimique de formule brute NO3-</rdfs:comment>
+    <dc:title>Nitrates</dc:title>
+    <skos:prefLabel xml:lang="en">Nitrate</skos:prefLabel>
+    <skos:prefLabel>Nitrates</skos:prefLabel>
+    <dc:identifier>http://id.eaufrance.fr/par/1340</dc:identifier>
+    <dc:language>fr</dc:language>
+    <dc:source>http://www.sandre.eaufrance.fr/</dc:source>
+    <foaf:page>http://id.eaufrance.fr/par/1340</foaf:page>
+    <dc:publisher>Service d&#39;Administration National des Données et Référentiels sur l&#39;Eau (SANDRE)</dc:publisher>
+    <ns5:NomParametre>Nitrates</ns5:NomParametre>
+    <ns5:CdParametre>1340</ns5:CdParametre>
+    <skos:inScheme>http://owl.sandre.eaufrance.fr/par/3/sandre_fmt_owl_par.owl</skos:inScheme>
+    <dc:subject>PARAMÈTRES</dc:subject>
+    <skos:altLabel>NO3-</skos:altLabel>
+    <skos:definition>Substance chimique de formule brute NO3-</skos:definition>
+    <par:AuteurParametre>DIREN de bassin ILE-de-FRANCE et CENTRE</par:AuteurParametre>
+    <par:ComParametre>Anciens codes paramètres : 73, 548.</par:ComParametre>
+    <par:Contributor rdf:resource="http://id.eaufrance.fr/int/31490172900066" />
+    <par:DateCreationParametre>1987-06-01</par:DateCreationParametre>
+    <par:DateMajParametre>2017-11-23</par:DateMajParametre>
+    <par:DfParametre>Substance chimique de formule brute NO3-</par:DfParametre>
+    <par:GroupeParametres rdf:resource="http://id.eaufrance.fr/gpr/47" />
+    <par:GroupeParametres rdf:resource="http://id.eaufrance.fr/gpr/191" />
+    <par:GroupeParametres rdf:resource="http://id.eaufrance.fr/gpr/192" />
+    <par:GroupeParametres rdf:resource="http://id.eaufrance.fr/gpr/193" />
+    <par:GroupeParametres rdf:resource="http://id.eaufrance.fr/gpr/164" />
+    <par:GroupeParametres rdf:resource="http://id.eaufrance.fr/gpr/165" />
+    <par:GroupeParametres rdf:resource="http://id.eaufrance.fr/gpr/166" />
+    <par:LbCourtParametre>NO3-</par:LbCourtParametre>
+    <par:LbLongParametre>Nitrates</par:LbLongParametre>
+    <par:Methode rdf:resource="http://id.eaufrance.fr/met/567" />
+    <par:Methode rdf:resource="http://id.eaufrance.fr/met/568" />
+    <par:Methode rdf:resource="http://id.eaufrance.fr/met/703" />
+    <par:Methode rdf:resource="http://id.eaufrance.fr/met/706" />
+    <par:Methode rdf:resource="http://id.eaufrance.fr/met/342" />
+    <par:Methode rdf:resource="http://id.eaufrance.fr/met/343" />
+    <par:Methode rdf:resource="http://id.eaufrance.fr/met/257" />
+    <par:Methode rdf:resource="http://id.eaufrance.fr/met/89" />
+    <par:Methode rdf:resource="http://id.eaufrance.fr/met/755" />
+    <par:NatParametre rdf:resource="http://id.eaufrance.fr/nsa/535#2" />
+    <par:NomParametre>Nitrates</par:NomParametre>
+    <par:NomTradParametre xml:lang="en">Nitrate</par:NomTradParametre>
+    <par:ParametreCalcule>0</par:ParametreCalcule>
+    <par:ParametreChimique rdf:nodeID="b46552513" />
+    <par:ReferenceParametre>- Recueil de normes françaises 1994, Qualité de l&#39;eau. Paris : AFNOR, 1994.
+- Analyse des eaux, méthodes et instructions. Environnement.
+- Mémento technique de l&#39;eau. Paris : Degrémont, 1989.
+- RODIER J. L&#39;analyse de l&#39;eau. 7ème éd. Paris : Dunod, 1984.</par:ReferenceParametre>
+    <par:StParametre rdf:resource="http://id.eaufrance.fr/nsa/390#Valid%C3%A9" />
+    <par:Synonyme rdf:resource="http://id.eaufrance.fr/par/586" />
+    <par:Synonyme rdf:resource="http://id.eaufrance.fr/par/434" />
+    <par:TypeParametre rdf:resource="http://id.eaufrance.fr/nsa/541#2" />
+    <ns5:DfParametre>Substance chimique de formule brute NO3-</ns5:DfParametre>
+    <ns5:StParametre>Validé</ns5:StParametre>
+    <par:CdParametre>1340</par:CdParametre>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b46552513">
+    <par:CdCASSubstanceChimique>14797-55-8</par:CdCASSubstanceChimique>
+    <par:FormuleBruteSubstanceChimique>NO3-</par:FormuleBruteSubstanceChimique>
+    <par:NomIUPACSubstanceChimique>nitrate</par:NomIUPACSubstanceChimique>
+    <par:UniteMesure rdf:resource="http://id.eaufrance.fr/urf/168" />
+    <par:UniteMesure rdf:resource="http://id.eaufrance.fr/urf/173" />
+    <par:UniteMesure rdf:resource="http://id.eaufrance.fr/urf/395" />
+  </rdf:Description>
+</rdf:RDF>

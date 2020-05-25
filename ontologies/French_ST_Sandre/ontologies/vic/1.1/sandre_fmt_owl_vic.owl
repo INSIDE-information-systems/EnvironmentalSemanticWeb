@@ -1,0 +1,3012 @@
+<Ontology xmlns="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="http://owl.sandre.eaufrance.fr/vic/1.1" ontologyIRI="http://owl.sandre.eaufrance.fr/vic/1.1" versionIRI="http://owl.sandre.eaufrance.fr/vic/1.1">
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="xsi" IRI="http://www.w3.org/2001/XMLSchema-instance"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="zon" IRI="http://id.eaufrance.fr/ddd/zon/2.2"/> 
+    <Prefix name="int" IRI="http://id.eaufrance.fr/ddd/int/2"/> 
+    <Prefix name="hyd" IRI="http://id.eaufrance.fr/ddd/hyd/2.2"/> 
+    <Prefix name="eth" IRI="http://id.eaufrance.fr/ddd/eth/2"/> 
+    <Prefix name="tre" IRI="http://id.eaufrance.fr/ddd/tre/1"/> 
+    <Prefix name="com" IRI="http://id.eaufrance.fr/ddd/com/4"/> 
+    <Prefix name="mdo" IRI="http://id.eaufrance.fr/ddd/mdo/1.3"/> 
+
+<!-- Définition des métadonnées de l'ontologie -->
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="rdfs:label"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vigilance crues</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:title"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vigilance crues</Literal>
+	</Annotation>
+   
+   
+   <Annotation>
+   <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vigilance crues</Literal>
+   </Annotation>
+   
+   
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1.1</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1-&gt;1.1
+		                                                                                                          - Ajout de l'attribut Est un niveau maximum de vigilance de l’information de vigilance crues 
+		                                                                                                          - Déplacement de l’attribut Type de portée géographique... du concept information de vigilance dans le concept d'entité de vigilance
+		                                                                                                          - Attribut renommée : Type de portée géographique... en Type d'entité de vigilance crue
+		                                                                                                          - Ajout de l'association Propagation entre entités de vigilance crues
+		                                                                                                          - Transformation de la relation Entités de vigilance crues incluse ou à l'intersection en Hiérarchie des entités de vigilance crues
+		                                                                                                          - Concept EVENEMENT DE L'INFORMATION DE VIGILANCE CRUES supprimé
+		                                                                                                          - Ajout de l'attribut Acronyme de l'entité de vigilance crues
+		                                                                                                          - Changement de cardinalité 1.1 -&gt; 1.* de l'association Producteur de l'information de vigilance
+		                                                                                                          - Concept renommé TRONCON DE VIGILANCE CRUES
+		                                                                                                          - Ajout du concept de BASSIN VERSANT DE VIGILANCE CRUES
+		                                                                                                          - Ajout du concept de TERRITOIRE DE VIGILANCE CRUES
+		                                                                                                          - Ajout du concept TEXTE REGLEMENTAIRE DU TCC
+		                                                                                                          - Les attributs suivants sont renommés : Nouvelle portant sur l'information de vigilance crues devient : Fait nouveau depuis la précédente information de vigilance crues ; Conseil de l'information de vigilance crues devient Conseil de comportements de l'information de vigilance crues et Conséquence de l'information de vigilance crues devient Conséquence possible de l'information de vigilance crues.
+		                                                                                                          - Ajout du concept de POINT DE VIGILANCE CRUES comme type d’entité de vigilance crues ponctuelle, correspondant à un LIEU HYDROMETRIQUE tel que défini dans le référentiel hydrométrique. 
+		                                                                                                          - Ajout du concept de SEGMENT DU TRONCON DE VIGILANCE CRUES qui compose le TRONCON DE VIGILANCE CRUES et hérite uniquement des attributs du SEGMENT HYDROGRAPHIQUE THEMATIQUE. 
+		                                                                                                          - L’attribut « Qualification de l’information de vigilance crues » est renommé en « Statut de l’information de vigilance crues ».
+		                                                                                                          - Création d’un nouvel attribut « Qualification de l’information de vigilance crues » avec une autre définition.
+		                                                                                                          - Ajout des attributs « Liste des tronçons en vigilance orange ou rouge » ; « Situation actuelle de l’information de vigilance crues » ; « Evolution prévue de l’information de vigilance crues » et « Situation hydrologique détaillée de l’information de vigilance crues ».
+		                                                                                                          04/09/2019 Erratum :
+		                                                                                                          - La propriété Code du district hydrographique de l'entité de vigilance crues (CdDistrictEntVigiCru) est remplacée par l'association District hydro de l'entité de vigilance crues
+		                                                                                                          </Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ce document décrit les données employées pour la vigilance crues</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/int/1470</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:subject"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Crues et inondations</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:description"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ce document décrit les données employées pour la vigilance crues</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ministère chargé de l'environnement</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:contributor"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SCHAPI, OIEau</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:created"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2014-04-23</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:modified"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2019-09-04</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:valid"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2019-05-17</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:license"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://creativecommons.org/licenses/by-nd/3.0/fr</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:coverage"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">France</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:format"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">owl/xml</Literal>
+	</Annotation>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // DECLARATION DES CLASSES
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+<!-- http://owl.sandre.eaufrance.fr/vic/1.1/TCC -->
+<Declaration>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+</Declaration>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TERRITOIRE DE COMPETENCE CRUES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Désigne une surface géographique sur laquelle des intervenants (service de prévision des crues (SPC) ou une cellule de veille hydrométéorologique (CVH) ou le service central d'hydrométéorologie et d'appui à la prévision des inondations (Schapi)) ont compétence en matière de vigilance crues. Le Schapi assure notamment la consolidation du référentiel national des territoires de compétence crues (TCC). D'une manière générale, un TCC se base sur les contours de bassins versants topographiques cohérents au niveau hydrographique. Des ajustements sur des limites administratives peuvent être effectués si l'impact hydrologique est négligeable. Ceci afin de ne pas impliquer ou impacter certains acteurs inutilement. 
+
+La gestion d'un TCC est assurée par un service de l'état ou établissement public. Le cadre réglementaire d'un TCC peut être défini par des textes réglementaires. Dans le cas particulier des SPC, il s'agit :
+- du schémas directeurs de la prévision des crues (SDPC) (cf. circulaire du 04 Novembre 2010 NOR : DEVP1023695C). 
+- du règlement de surveillance, de prévision et de transmission de l'information sur les crues (RIC).
+
+ 
+</Literal>    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classe</Literal>
+    </AnnotationAssertion>
+        <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Désigne une surface géographique sur laquelle des intervenants (service de prévision des crues (SPC) ou une cellule de veille hydrométéorologique (CVH) ou le service central d'hydrométéorologie et d'appui à la prévision des inondations (Schapi)) ont compétence en matière de vigilance crues. Le Schapi assure notamment la consolidation du référentiel national des territoires de compétence crues (TCC). D'une manière générale, un TCC se base sur les contours de bassins versants topographiques cohérents au niveau hydrographique. Des ajustements sur des limites administratives peuvent être effectués si l'impact hydrologique est négligeable. Ceci afin de ne pas impliquer ou impacter certains acteurs inutilement. 
+
+La gestion d'un TCC est assurée par un service de l'état ou établissement public. Le cadre réglementaire d'un TCC peut être défini par des textes réglementaires. Dans le cas particulier des SPC, il s'agit :
+- du schémas directeurs de la prévision des crues (SDPC) (cf. circulaire du 04 Novembre 2010 NOR : DEVP1023695C). 
+- du règlement de surveillance, de prévision et de transmission de l'information sur les crues (RIC).
+
+ 
+</Literal>    </AnnotationAssertion>
+
+<!-- http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru -->
+<Declaration>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+</Declaration>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">INFORMATION DE VIGILANCE CRUES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ensemble des renseignements (i.e. production) relatifs à la situation dans laquelle se trouve une entité de vigilance crues à un instant donné. La situation de vigilance crues correspond au niveau de risque encouru par la population concernée par l'entité de vigilance, pour les 24 heures suivant la date d'émission de l'information de vigilance crues.</Literal>    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classe</Literal>
+    </AnnotationAssertion>
+        <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ensemble des renseignements (i.e. production) relatifs à la situation dans laquelle se trouve une entité de vigilance crues à un instant donné. La situation de vigilance crues correspond au niveau de risque encouru par la population concernée par l'entité de vigilance, pour les 24 heures suivant la date d'émission de l'information de vigilance crues.</Literal>    </AnnotationAssertion>
+
+<!-- http://owl.sandre.eaufrance.fr/vic/1.1/GeneEntVigiCru -->
+<Declaration>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/GeneEntVigiCru"/>
+</Declaration>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/GeneEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GENEALOGIE DE L'ENTITE DE VIGILANCE CRUES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/GeneEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Succession  d'entités de vigilance crues qui établit une filiation temporelle (cette notion est différente de celle de filiation géographique entre des entités de vigilance - i.e. Entité de vigilance crues incluse ou à l’intersection). La généalogie trace les évolutions des entités de vigilance crues au cours du temps. 
+
+   </Literal>    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/GeneEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classe</Literal>
+    </AnnotationAssertion>
+        <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/GeneEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Succession  d'entités de vigilance crues qui établit une filiation temporelle (cette notion est différente de celle de filiation géographique entre des entités de vigilance - i.e. Entité de vigilance crues incluse ou à l’intersection). La généalogie trace les évolutions des entités de vigilance crues au cours du temps. 
+
+   </Literal>    </AnnotationAssertion>
+
+<!-- http://owl.sandre.eaufrance.fr/vic/1.1/GeneTCC -->
+<Declaration>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/GeneTCC"/>
+</Declaration>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/GeneTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GENEALOGIE DU TERRITOIRE DE COMPETENCE CRUES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/GeneTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">La généalogie trace les évolutions des territoires de compétence crues (TCC) au cours du temps.
+</Literal>    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/GeneTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classe</Literal>
+    </AnnotationAssertion>
+        <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/GeneTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">La généalogie trace les évolutions des territoires de compétence crues (TCC) au cours du temps.
+</Literal>    </AnnotationAssertion>
+
+<!-- http://owl.sandre.eaufrance.fr/vic/1.1/IntTCC -->
+<Declaration>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/IntTCC"/>
+</Declaration>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/IntTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">INTERVENANT DU TERRITOIRE DE COMPETENCE CRUES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/IntTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Organisme ou service d'un organisme (i.e. intervenant) ayant un rôle vis à vis d'un territoire de compétence crues (TCC) sur une période donnée. L'intervenant du TCC peut porter différents rôles dont celui d'administrateur des données tel que défini dans le schémas directeurs de la prévision des crues (cf circulaire du 04 Novembre 2010 NOR : DEVP1023695C). 
+ </Literal>    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/IntTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classe</Literal>
+    </AnnotationAssertion>
+        <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/IntTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Organisme ou service d'un organisme (i.e. intervenant) ayant un rôle vis à vis d'un territoire de compétence crues (TCC) sur une période donnée. L'intervenant du TCC peut porter différents rôles dont celui d'administrateur des données tel que défini dans le schémas directeurs de la prévision des crues (cf circulaire du 04 Novembre 2010 NOR : DEVP1023695C). 
+ </Literal>    </AnnotationAssertion>
+
+<!-- http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru -->
+<Declaration>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+</Declaration>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ENTITE DE VIGILANCE CRUES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emprise géographique - représentée par un point, une ligne ou une polygone - destinée à porter une information de vigilance crues. Une entité de vigilance crues peut éventuellement regrouper plusieurs entités de vigilance crues (i.e. Entité de vigilance crues incluse ou à l’intersection). 
+
+Une entité de vigilance crue peut être située au même endroit :
+- qu'une station hydrométrique lorsque l'entité est représentée par un point,
+- qu'un ou plusieurs cours d'eau lorsque l'entité est représentée par une ligne, - etc.
+
+Chaque entité de vigilance crues est gérée par un administrateur (ie. intervenant)
+
+
+
+
+  </Literal>    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classe</Literal>
+    </AnnotationAssertion>
+        <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Emprise géographique - représentée par un point, une ligne ou une polygone - destinée à porter une information de vigilance crues. Une entité de vigilance crues peut éventuellement regrouper plusieurs entités de vigilance crues (i.e. Entité de vigilance crues incluse ou à l’intersection). 
+
+Une entité de vigilance crue peut être située au même endroit :
+- qu'une station hydrométrique lorsque l'entité est représentée par un point,
+- qu'un ou plusieurs cours d'eau lorsque l'entité est représentée par une ligne, - etc.
+
+Chaque entité de vigilance crues est gérée par un administrateur (ie. intervenant)
+
+
+
+
+  </Literal>    </AnnotationAssertion>
+
+<!-- http://owl.sandre.eaufrance.fr/vic/1.1/TronEntVigiCru -->
+<Declaration>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TronEntVigiCru"/>
+</Declaration>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TronEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TRONCON DE VIGILANCE CRUES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TronEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Segment issu d'un découpage et/ou agrégation d'un ou plusieurs tronçons hydrographiques du référentiel hydrographique ou d'une portion de contour administratif pour répondre au besoin de la vigilance crues. Le tronçon de vigilance crues est destiné à priori à porter l'information de vigilance crues au cours du temps. 
+Plusieurs portions de cours d'eau au fonctionnement hydrologique similaire peuvent être agglomérées au sein d'un même tronçon de vigilance cures, par exemple : Arrats - Gimone - Save - Touch. 
+L'estuaire de la Gironde est un cas particulier de tronçon de vigilance crues basé sur un contour administratif. </Literal>    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TronEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classe</Literal>
+    </AnnotationAssertion>
+        <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TronEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Segment issu d'un découpage et/ou agrégation d'un ou plusieurs tronçons hydrographiques du référentiel hydrographique ou d'une portion de contour administratif pour répondre au besoin de la vigilance crues. Le tronçon de vigilance crues est destiné à priori à porter l'information de vigilance crues au cours du temps. 
+Plusieurs portions de cours d'eau au fonctionnement hydrologique similaire peuvent être agglomérées au sein d'un même tronçon de vigilance cures, par exemple : Arrats - Gimone - Save - Touch. 
+L'estuaire de la Gironde est un cas particulier de tronçon de vigilance crues basé sur un contour administratif. </Literal>    </AnnotationAssertion>
+
+<!-- http://owl.sandre.eaufrance.fr/vic/1.1/BassinEntVigiCru -->
+<Declaration>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/BassinEntVigiCru"/>
+</Declaration>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/BassinEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">BASSIN VERSANT DE VIGILANCE CRUES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/BassinEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Surface drainée par un cours d'eau principal et ses affluents répondant aux enjeux de la vigilance crues. Le bassin versant de vigilance crues est destiné à priori à porter l'information de vigilance crues au cours du temps. 
+</Literal>    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/BassinEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classe</Literal>
+    </AnnotationAssertion>
+        <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/BassinEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Surface drainée par un cours d'eau principal et ses affluents répondant aux enjeux de la vigilance crues. Le bassin versant de vigilance crues est destiné à priori à porter l'information de vigilance crues au cours du temps. 
+</Literal>    </AnnotationAssertion>
+
+<!-- http://owl.sandre.eaufrance.fr/vic/1.1/TerEntVigiCru -->
+<Declaration>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TerEntVigiCru"/>
+</Declaration>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TerEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TERRITOIRE DE VIGILANCE CRUES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TerEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Surface, regroupant des bassins versants, couverte par la vigilance crues. Elle est utilisée pour communiquer une information de vigilance crues de synthèse à l'échelle d'un territoire dont l'origine peut provenir des entités de vigilance crues filles.
+A titre d'exemple, le territoire Adour comme le territoire Vilaine-Côtiers Bretons ou encore le territoire métropolitain, sont des territoires de vigilance crues. </Literal>    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TerEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classe</Literal>
+    </AnnotationAssertion>
+        <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TerEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Surface, regroupant des bassins versants, couverte par la vigilance crues. Elle est utilisée pour communiquer une information de vigilance crues de synthèse à l'échelle d'un territoire dont l'origine peut provenir des entités de vigilance crues filles.
+A titre d'exemple, le territoire Adour comme le territoire Vilaine-Côtiers Bretons ou encore le territoire métropolitain, sont des territoires de vigilance crues. </Literal>    </AnnotationAssertion>
+
+<!-- http://owl.sandre.eaufrance.fr/vic/1.1/TexteReglemTCC -->
+<Declaration>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TexteReglemTCC"/>
+</Declaration>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TexteReglemTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TEXTE REGLEMENTAIRE DU TCC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TexteReglemTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Textes réglementaires qui régissent l'organisation des services de l'Etat, avec d'éventuels partenaires, sur un territoire donné, en matière de production et de transmission d'informations sur les risques de crues.</Literal>    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TexteReglemTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classe</Literal>
+    </AnnotationAssertion>
+        <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TexteReglemTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Textes réglementaires qui régissent l'organisation des services de l'Etat, avec d'éventuels partenaires, sur un territoire donné, en matière de production et de transmission d'informations sur les risques de crues.</Literal>    </AnnotationAssertion>
+
+<!-- http://owl.sandre.eaufrance.fr/vic/1.1/PointEntVigiCru -->
+<Declaration>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/PointEntVigiCru"/>
+</Declaration>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/PointEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">POINT DE VIGILANCE CRUES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/PointEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Point couvert par la vigilance crues. Il est utilisé pour communiquer une information de vigilance crues, par exemple à une station ou un site hydrométrique.</Literal>    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/PointEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classe</Literal>
+    </AnnotationAssertion>
+        <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/PointEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Point couvert par la vigilance crues. Il est utilisé pour communiquer une information de vigilance crues, par exemple à une station ou un site hydrométrique.</Literal>    </AnnotationAssertion>
+
+<!-- http://owl.sandre.eaufrance.fr/vic/1.1/SegTronEntVigiCru -->
+<Declaration>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SegTronEntVigiCru"/>
+</Declaration>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/SegTronEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SEGMENT DU TRONCON DE VIGILANCE CRUES</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/SegTronEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Portion de cours d'eau ou de tronçon hydrographique utilisée dans la définition d'un tronçon hydrographique de vigilance crues. Cette portion est délimitée par ses points kilométriques amont et aval, calculés par rapport à l'embouchure du cours d'eau passant par le segment.</Literal>    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/SegTronEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classe</Literal>
+    </AnnotationAssertion>
+        <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/SegTronEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Portion de cours d'eau ou de tronçon hydrographique utilisée dans la définition d'un tronçon hydrographique de vigilance crues. Cette portion est délimitée par ses points kilométriques amont et aval, calculés par rapport à l'embouchure du cours d'eau passant par le segment.</Literal>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/int/2/Intervenant -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/int/2/Intervenant"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/int/2/Intervenant</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/int/2/Intervenant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/int/2/Intervenant</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">INTERVENANT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/int/2/Intervenant</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Les intervenants sont tous les organismes ayant un ou plusieurs rôle(s) en tant qu’acteur de l’eau et qui sont référencés dans les bases de données respectant le formalisme du SANDRE. Ils sont identifiés dans les échanges de données par leur code SIRET. Quand ce dernier ne peut pas exister car l'intervenant ne rentre pas dans le domaine d'application du registre national ou lorsque ce code ne permet pas d’identifier de manière univoque l’intervenant (cas des structures incluses dans une structure plus générale), il est alors identifié par son code SANDRE. 
+
+Ils se partagent entre plusieurs catégories dont :
+- laboratoire d'analyse,
+- préleveur,
+- opérateur en hydrométrie,
+- laboratoire d'hydrobiologie,
+- organisme chargé de la police des eaux,
+-  producteur/ gestionnaire,
+- …
+
+Deux informations sont utilisées pour identifier un intervenant : son code et le code SIRET de l’organisme auquel il est rattaché : 
+- Cas 1 : l’organisme est SIRETE, par exemple un laboratoire. Le code SIRET est utilisé, aucun code SANDRE n’est indiqué. L’attribut “ code SIRET de l’organisme auquel est rattaché l’intervenant ” n’est pas rempli,
+- Cas 2 : l’organisme n’a pas de code SIRET, dans ce cas, il est attribué un code SANDRE. L’attribut “ code SIRET de l’organisme auquel est rattaché l’intervenant ” n’est pas rempli,
+- Cas 3 : l’organisme n’a pas de code SIRET en tant qu’établissement mais est rattaché à une structure, par exemple le SATESE rattaché au Conseil Général. Dans ce cas, il est attribué un code SANDRE et l’attribut “ code SIRET de l’organisme auquel est rattaché l’intervenant ” est rempli avec le code SIRET, dans l’exemple, celui du Conseil Général. 
+
+La liste nationale des codes SANDRE des intervenants est établie sous la responsabilité du SANDRE. Le code SIRET est établi par l'INSEE.</Literal>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/hyd/2.2/LieuHydro -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/hyd/2.2/LieuHydro"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/hyd/2.2/LieuHydro</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/hyd/2.2/LieuHydro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/hyd/2.2/LieuHydro</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LIEU HYDROMETRIQUE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/hyd/2.2/LieuHydro</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Endroit géographique abstrait sur lequel des mesures ou observations hydrométriques sont effectuées. Le lieu hydrométrique est un site hydrométrique ou une station hydrométrique selon la nature des relevés réalisés. </Literal>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/zon/2.2/SegHydroThematique -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/zon/2.2/SegHydroThematique"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/zon/2.2/SegHydroThematique</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/zon/2.2/SegHydroThematique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/zon/2.2/SegHydroThematique</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SEGMENT HYDROGRAPHIQUE THEMATIQUE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/zon/2.2/SegHydroThematique</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Un segment hydrographique thématique correspond à tout tronçon issu d'un découpage et/ou agrégation d'un ou plusieurs tronçons hydrographiques élémentaires du référentiel hydrographique pour répondre au besoin d'une thématique donnée pour laquelle le référentiel hydrographique n'apporterait pas l'information spatiale nécessaire.
+
+Les extrémités amont/aval du segment hydrographique thématique DOIVENT être exprimées soit selon des valeurs de pkmétrage et/ou soit selon leurs coordonnées (attributs X/Y prévus à cet effet).
+
+Un tronçon hydrographique thématique est un Arc non multipartie.</Literal>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/eth/2/SegHydroThematique -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/eth/2/SegHydroThematique"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/eth/2/SegHydroThematique</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/eth/2/SegHydroThematique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/eth/2/SegHydroThematique</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SEGMENT HYDROGRAPHIQUE THEMATIQUE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/eth/2/SegHydroThematique</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Un segment hydrographique thématique correspond à tout tronçon issu d'un découpage et/ou agrégation d'un ou plusieurs tronçons hydrographiques élémentaires du référentiel hydrographique pour répondre au besoin d'une thématique donnée pour laquelle le référentiel hydrographique n'apporterait pas l'information spatiale nécessaire.
+
+Les extrémités amont/aval du segment hydrographique thématique DOIVENT être exprimées soit selon des valeurs de pkmétrage et/ou soit selon leurs coordonnées (attributs X/Y prévus à cet effet).
+
+Un segment hydrographique thématique est un Arc non multipartie.</Literal>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/tre/1/TexteReglem -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/tre/1/TexteReglem"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/tre/1/TexteReglem</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/tre/1/TexteReglem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/tre/1/TexteReglem</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">TEXTE REGLEMENTAIRE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/tre/1/TexteReglem</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/com/4/Commune -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/com/4/Commune"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/com/4/Commune</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/com/4/Commune</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/com/4/Commune</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">COMMUNE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/com/4/Commune</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">La commune est une des circonscriptions administratives pivots du découpage administratif du territoire national. Elle est identifiée par un code alphanumérique sur 5 positions attribué par l'INSEE - à ne pas confondre avec le code postal.
+
+La notion de commune ne doit pas être confondue avec celle de  "ville nouvelle" qui fait l'objet de la loi n°70-610 du 10 juillet 1970. Cette dernière définit un certain nombre de dispositions tendant à faciliter la création "d'agglomérations nouvelles", communément appelées "villes nouvelles". 
+
+Pour mieux répondre à certains de leurs besoins qui sont communs à d'autres collectivités territoriales et qui dépassent souvent le cadre et les capacités d'une entité communale, les communes peuvent adhérer à une ou plusieurs institutions inter collectivités territoriales à chacune desquelles elles délégueront une ou plusieurs compétences dans le but de mettre en commun les moyens indispensables pour atteindre leurs objectifs.
+
+Une commune peut également avoir un ou plusieurs liens avec une ou plusieurs communes à la suite de l'évolution du découpage communal (scission ou fusion de communes...). A chaque lien, il sera précisé dans les attributs "Nature de l'évolution" et "Date de l'évolution" du lien "Historique du découpage communal",  la nature de l'évolution ainsi que la date à laquelle elle intervient.
+
+Certaines communes tiennent le rôle de chef lieu pour les régions, les départements, les arrondissements et les cantons.
+
+La liste des communes est sous la responsabilité de l'INSEE.
+
+Ce concept de COMMUNE est également utilisé pour gérer les communes des pays frontaliers à des fins de gestion de données. Le nom du concept se rapportant à la plus petite subdivision administrative varie selon les pays.
+exemple: 
+pour l'Espagne "municipio" dont les codes sont attribués par l'INE.
+pour l'Italie "comune" dont les codes sont attribués par l'ISTAT.
+pour la Belgique "commune" dont les codes sont attribués par l'INS
+pour l'Allemagne "gemeinde" dont les codes sont attribués par l'AGS.
+pour les Pays-Bas "gemeente" dont les codes sont attribués par le GEM.
+pour la Suisse "kommun" dont les codes sont attribués par l'OFS
+pour le Luxemboug "commune" dont les codes sont attribués par le STATEC
+
+</Literal>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/com/4/CircAdminBassin -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/com/4/CircAdminBassin"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/com/4/CircAdminBassin</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/com/4/CircAdminBassin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/com/4/CircAdminBassin</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CIRCONSCRIPTION ADMINISTRATIVE DE BASSIN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/com/4/CircAdminBassin</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">La France comprend 12 circonscriptions de bassin ou comités de bassin (7 en métropole et 5 en outre-mer).
+
+Le territoire administratif de chaque bassin est basé sur le découpage communal, par arrêté ministériel.
+
+
+
+
+
+
+
+</Literal>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/zon/2.2/Zone -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/zon/2.2/Zone"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/zon/2.2/Zone</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/zon/2.2/Zone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/zon/2.2/Zone</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ZONE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/zon/2.2/Zone</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Une zone est une portion de territoire, délimitée selon des critères administratifs, hydrographiques ou autres, composante d'un zonage.
+
+Lorsqu'une zone est définie, sur une même emprise administrative, par plusieurs textes réglementaires dans le temps (ex : succession de plusieurs arrêtés) on retiendra le dernier texte modificatif; le texte modificatif faisant référence à celui qu'il modifie.
+
+##################################
+Représentation spatiale de la Zone :
+Une zone peut être représentée spatialement par : 
+- un point,
+- un arc,
+- un polygone.
+
+Sauf remarque contraire, les représentation spatiales de toutes les zones identifiées au sein de ce dictionnaire seront en coordonnées non projetées : 
+- RGF 93 pour la métropole,
+- RRAF 91 pour la Guadeloupe / Martinique,
+- RGF 95 pour la Guyane,
+- RGR 92 pour la Réunion, 
+- RGM04 pour Mayotte,
+- ETRS89 pour les données rapportées à l'Europe pour la France Métropolitaine et la Corse et WGS84 pour les DOM.
+
+Lorsque des coordonnées seront exprimées par l'intermédiaire d'attributs elles le seront en degrés décimaux, sauf cas spécifique où le système de référence spatial des coordonnées sera précisé.
+
+Pour des raisons de cohérence entre les référentiels (BD Carthage pour l'instant au 1/50000e), sauf remarque contraire, la précision métrique ne sera pas absolument recherchée.
+
+Ainsi, pour le RGF93, les coordonnées seront saisies avec un minimum de 5 décimales.</Literal>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/mdo/1.3/DistrictHydro -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/mdo/1.3/DistrictHydro"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/mdo/1.3/DistrictHydro</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/mdo/1.3/DistrictHydro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/mdo/1.3/DistrictHydro</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DISTRICT HYDROGRAPHIQUE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/mdo/1.3/DistrictHydro</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Au sens de la DCE, un district hydrographique est une zone terrestre et maritime, composée d'un ou plusieurs bassins hydrographiques ainsi que des eaux souterraines et eaux côtières associées, identifiée comme principale unité aux fins de la gestion des bassins hydrographiques. 
+Au sens de la DCE, un bassin hydrographique est toute zone dans laquelle toutes les eaux de ruissellement convergent à travers un réseau de rivières, fleuves et éventuellement de lacs vers la mer, dans laquelle elles se déversent par une seule embouchure, estuaire ou delta.
+Les États membres recensent les bassins hydrographiques qui se trouvent sur leur territoire national et, aux fins de la DCE, les rattachent à des districts hydrographiques. Les petits bassins hydrographiques peuvent, si nécessaire, être liés à des bassins plus importants ou regroupés avec des petits bassins avoisinants pour former un district hydrographique. Lorsque les eaux souterraines ne correspondent pas complètement à un bassin hydrographique particulier, elles sont identifiées et intégrées au district hydrographique le plus proche ou le plus approprié. Les eaux côtières sont identifiées et rattachées au(x) district(s) hydrographique(s) le(s) plus proche(s) ou le(s) plus approprié(s).
+Un district hydrographique est international lorsque sa délimitation géographique inclut des territoires appartenant à plusieurs états membres.
+
+</Literal>    </AnnotationAssertion>
+
+<DisjointClasses>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/BassinEntVigiCru"/>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TerEntVigiCru"/>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/PointEntVigiCru"/>
+<Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TronEntVigiCru"/>
+
+</DisjointClasses>
+
+
+    <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/BassinEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </SubClassOf>
+
+    <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TerEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </SubClassOf>
+
+    <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/PointEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </SubClassOf>
+
+    <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TronEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </SubClassOf>
+
+    <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SegTronEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SegHydroThematique"/>
+    </SubClassOf>
+
+    <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SegTronEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SegHydroThematique"/>
+    </SubClassOf>
+
+    <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/Zone"/>
+    </SubClassOf>
+
+    <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/BassinEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/Zone"/>
+    </SubClassOf>
+
+    <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TerEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/Zone"/>
+    </SubClassOf>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // DECLARATION DES DATA PROPERTIES
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+<!-- CdTCC -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/CdTCC"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/CdTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Code du territoire de compétence crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/CdTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifiant unique et non signifiant du territoire de compétence crues (TCC). Cet identifiant est sous la responsabilité du  service central d'hydrométéorologie et d'appui à la prévision des inondations (Schapi) qui assure la consolidation du référentiel national des TCC. 
+
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/CdTCC"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/CdTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/CdTCC"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- LbTCC -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/LbTCC"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/LbTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Libellé du territoire de compétence crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/LbTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Désignation commune du territoire de compétence crues (TCC), telle que définie au sein des textes réglementaires associés. En l'absence de texte réglementaire le précisant, le service central d'hydrométéorologie et d'appui à la prévision des inondations (Schapi) fournit le libellé du territoire de compétence crues. 
+
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/LbTCC"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/LbTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/LbTCC"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- AcroTCC -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/AcroTCC"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/AcroTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Acronyme du territoire de compétence crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/AcroTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Abréviation commune du territoire de compétence crues (TCC). Il peut correspondre à l'abréviation du service de prévision des crues (SPC) ou de la cellule de veille hydrométéorologique (CVH) (ie. intervenant) en charge du TCC. Aucune convention d'écriture n'est imposée. 
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/AcroTCC"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/AcroTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/AcroTCC"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- GeomTCC -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/GeomTCC"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/GeomTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Surface du territoire de compétence crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/GeomTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Géométrie du territoire de compétence crues (TCC) représentée par une surface telle que définie au sein des textes réglementaires associés.</Literal>    </AnnotationAssertion>
+    
+
+        
+
+
+
+<!-- DtHrCreatTCC -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DtHrCreatTCC"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrCreatTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date et heure de création du territoire de compétence crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrCreatTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indication du jour, mois et année suivie de l'heure, minute et seconde, exprimée au jour près, où le territoire de compétence crues (TCC) est créé. Cette indication est exprimée en heure TU (temps universel).</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrCreatTCC"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrCreatTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrCreatTCC"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+
+
+
+
+<!-- DtHrMajTCC -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DtHrMajTCC"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date et heure de mise à jour du territoire de compétence crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indication du jour, mois et année suivie de l'heure, minute et seconde, exprimée au jour près, où le territoire de compétence crues (TCC) est mis à jour. Cette indication est exprimée en heure TU (temps universel).</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajTCC"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajTCC"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+
+
+
+
+<!-- StTCC -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/StTCC"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/StTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Statut du territoire de compétence crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/StTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indication sur l'état de validité du territoire de compétence crues (TCC).  Dès lors qu'il prend la valeur possible "gelé", plus aucune information de vigilance ne peut être rattachée au territoire de compétence crues. La date de mise à jour est actualisée en conséquence. Le statut du TCC prend l'une des valeurs possibles définies dans la nomenclature Sandre n°390. 
+
+</Literal>    </AnnotationAssertion>
+    
+
+             <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/StTCC"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/StTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+    </DataPropertyDomain>
+       <DataPropertyRange>
+       
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/StTCC"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>
+
+
+    </DataPropertyRange>
+
+  	<AnnotationAssertion>
+		<AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+		<IRI>#StParametre</IRI>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/nsa/390</Literal>
+	</AnnotationAssertion>        
+       
+       
+
+
+
+
+
+
+<!-- RefInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/RefInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/RefInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Référence de l'information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/RefInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Partie de l'identifiant, unique et non signifiant, de l'information de vigilance crues. L'identifiant complet de l'information de vigilance crues comporte la référence de l’information de vigilance crues  et le code de l'intervenant chargé de la production de l'information de vigilance crues (cf. producteur). 
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/RefInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/RefInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/RefInfoVigiCru"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- DtHrInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DtHrInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date et heure de l'information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indication du jour, mois et année suivie de l'heure, minute et seconde, exprimée au jour près, où l'information de vigilance crues est produite. Cette indication est exprimée en heure TU (temps universel). 
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrInfoVigiCru"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+
+
+
+
+<!-- TypInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/TypInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TypInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de mise à jour de l'information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TypInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Catégorie d'horaire de production de l'information de vigilance crues. Hormis les heures nominales, 10h et 16h, il peut y avoir autant d'actualisation de l'information de vigilance crues que la situation l'impose. La liste des valeurs possibles administrées par le Sandre du type de mise à jour de l'information de vigilance crues est définie selon la nomenclature n°844.
+
+
+</Literal>    </AnnotationAssertion>
+    
+
+             <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TypInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TypInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>
+       <DataPropertyRange>
+       
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TypInfoVigiCru"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>
+
+
+    </DataPropertyRange>
+
+  	<AnnotationAssertion>
+		<AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+		<IRI>#StParametre</IRI>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/nsa/844</Literal>
+	</AnnotationAssertion>        
+       
+       
+
+
+
+
+<!-- DtHrSuivInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DtHrSuivInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrSuivInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date et heure de la prochaine information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrSuivInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indication du jour, mois et année suivie de l'heure, minute et seconde, à laquelle sera publiée au plus tard la prochaine information de vigilance crues. Cette indication est exprimée en heure TU (temps universel). 
+
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrSuivInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrSuivInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrSuivInfoVigiCru"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+
+
+
+
+<!-- NivInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/NivInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/NivInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Niveau de vigilance de l'information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/NivInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Niveau de vigilance correspondant au risque encouru par la population concernée par l'entité de vigilance crues, dans les 24 heures suivant la date d'émission de l'information de vigilance crues. Il y a 4 niveaux de vigilance crues classés du niveau de risque le plus faible au plus élevé (de 1 à 4). Chaque entité de vigilance crues se voit affecté un niveau . Le niveau de vigilance de l’information de vigilance crues prend l'une des valeurs possibles administrées par le Sandre selon la nomenclature n°837.
+</Literal>    </AnnotationAssertion>
+    
+
+             <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/NivInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/NivInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>
+       <DataPropertyRange>
+       
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/NivInfoVigiCru"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>
+
+
+    </DataPropertyRange>
+
+  	<AnnotationAssertion>
+		<AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+		<IRI>#StParametre</IRI>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/nsa/837</Literal>
+	</AnnotationAssertion>        
+       
+       
+
+
+
+
+<!-- URLPictoInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/URLPictoInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/URLPictoInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">URL du pictogramme de l'information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/URLPictoInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Uniform Resource Locator (URL) désignant l'adresse Web d'accès au pictogramme (symbole sous forme d'image) correspondant à l'information de vigilance crues dans son état maximum.</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/URLPictoInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/URLPictoInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/URLPictoInfoVigiCru"/>
+            <Datatype abbreviatedIRI="xsd:string"/>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- EstNivCalInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/EstNivCalInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/EstNivCalInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Est un niveau calculé de vigilance de l’information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/EstNivCalInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Est un niveau calculé de vigilance (oui/non). Si oui, le niveau de vigilance de cette entité - qui porte l'information de vigilance crue - est déterminé en fonction du niveau de toutes ses entités "filles".
+</Literal>    </AnnotationAssertion>
+    
+
+        <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EstNivCalInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EstNivCalInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EstNivCalInfoVigiCru"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    
+
+
+
+<!-- PeriodInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/PeriodInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/PeriodInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Durée de retour d'un aléa de l'information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/PeriodInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Terme associé à la probabilité (i.e. durée de retour d'un événement) qu'un épisode se produise  (exemple : crue centennale). La durée de retour d'un aléa de l'information de vigilance crues prend l'une des valeurs possibles de la nomenclature Sandre n°894.
+</Literal>    </AnnotationAssertion>
+    
+
+             <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/PeriodInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/PeriodInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>
+       <DataPropertyRange>
+       
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/PeriodInfoVigiCru"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>
+
+
+    </DataPropertyRange>
+
+  	<AnnotationAssertion>
+		<AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+		<IRI>#StParametre</IRI>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/nsa/894</Literal>
+	</AnnotationAssertion>        
+       
+       
+
+
+
+
+<!-- QualifInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/QualifInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/QualifInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Qualification de l'information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/QualifInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Une phrase qui résume la situation (lorsque le niveau de vigilance crues est supérieur à l'orange) en indiquant la localisation géographique et l'ampleur du phénomène prévu ou actuel.
+Ex : Fréquente pour la saison. 
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/QualifInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/QualifInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/QualifInfoVigiCru"/>
+            <Datatype abbreviatedIRI="xsd:string"/>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- FaitNouvInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/FaitNouvInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/FaitNouvInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fait nouveau depuis la précédente information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/FaitNouvInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Fait(s) nouveau(x), exprimé(s) sous la forme d'un texte libre lorsque le niveau de vigilance crues est supérieur à l'orange, dont l'objectif est de commenter l'information de vigilance crues comparée à la précédente information publiée. 
+
+Ex : "Nouvelle mise en vigilance crues", "Elévation du niveau de vigilance crues", "Levée de la vigilance crues".</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/FaitNouvInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/FaitNouvInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/FaitNouvInfoVigiCru"/>
+            <Datatype abbreviatedIRI="xsd:string"/>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- ConsInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/ConsInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/ConsInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Conseil de comportement de l'information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/ConsInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indication, exprimée sous la forme d'un texte libre, sur les actions à mener au regard de la situation de vigilance crues. 
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ConsInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ConsInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ConsInfoVigiCru"/>
+            <Datatype abbreviatedIRI="xsd:string"/>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- ConseqInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/ConseqInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/ConseqInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Conséquence possible de l'information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/ConseqInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ensemble d'événements possibles, exprimés sous la forme d'un texte libre, entraînés par la situation de vigilance crues. </Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ConseqInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ConseqInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ConseqInfoVigiCru"/>
+            <Datatype abbreviatedIRI="xsd:string"/>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- StInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/StInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/StInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Statut de l'information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/StInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Etat de validité de l'information de vigilance crues indiquée par le producteur de l'information. Le statut de l'information de vigilance crues prend l'une des valeurs possibles administrées par le Sandre selon selon la nomenclature n°848.  </Literal>    </AnnotationAssertion>
+    
+
+             <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/StInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/StInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>
+       <DataPropertyRange>
+       
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/StInfoVigiCru"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>
+
+
+    </DataPropertyRange>
+
+  	<AnnotationAssertion>
+		<AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+		<IRI>#StParametre</IRI>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/nsa/848</Literal>
+	</AnnotationAssertion>        
+       
+       
+
+
+
+
+<!-- ListeTronInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/ListeTronInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/ListeTronInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Liste des tronçons en vigilance orange ou rouge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/ListeTronInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Liste des numéros de départements déclarés en vigilance "inondation" ou "pluie-inondation" par Météo-France, suite au passage en vigilance orange ou rouge d'entités de vigilance crues. </Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ListeTronInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ListeTronInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ListeTronInfoVigiCru"/>
+            <Datatype abbreviatedIRI="xsd:string"/>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- SituActuInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/SituActuInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/SituActuInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Situation actuelle de l'information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/SituActuInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Synthèse qualitative sur les aspects météorologiques et hydrologiques de ce qui est observé à l'heure de rédaction du bulletin, ou l'a été dans un passé proche. A noter que ce commentaire peut contenir des faits nouveaux en vigilance crues "jaune".</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SituActuInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SituActuInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SituActuInfoVigiCru"/>
+            <Datatype abbreviatedIRI="xsd:string"/>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- EvolInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/EvolInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/EvolInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Evolution prévue de l'information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/EvolInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Prévision des phénomènes météorologiques et hydrologiques et de leurs conséquences en termes de débordements.</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EvolInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EvolInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EvolInfoVigiCru"/>
+            <Datatype abbreviatedIRI="xsd:string"/>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- SituHydroInfoVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/SituHydroInfoVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/SituHydroInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Situation hydrologique détaillée de l'information de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/SituHydroInfoVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Précisions sur les secteurs concernés par de la vigilance crues d'un niveau supérieur à orange.</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SituHydroInfoVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SituHydroInfoVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SituHydroInfoVigiCru"/>
+            <Datatype abbreviatedIRI="xsd:string"/>        
+        
+    </DataPropertyRange>
+
+
+
+
+
+
+<!-- TypGeneEntVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/TypGeneEntVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TypGeneEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de généalogie de l'entité de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TypGeneEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nature de l'opération de modification de la généalogie de l'entité de vigilance crues. Le type de généalogie de l'entité de vigilance crues prend l'une des valeurs possibles définies selon la nomenclature Sandre n°590. </Literal>    </AnnotationAssertion>
+    
+
+             <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TypGeneEntVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TypGeneEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/GeneEntVigiCru"/>
+    </DataPropertyDomain>
+       <DataPropertyRange>
+       
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TypGeneEntVigiCru"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>
+
+
+    </DataPropertyRange>
+
+  	<AnnotationAssertion>
+		<AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+		<IRI>#StParametre</IRI>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/nsa/590</Literal>
+	</AnnotationAssertion>        
+       
+       
+
+
+
+
+<!-- DtMajGeneEntVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DtMajGeneEntVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtMajGeneEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date et heure de généalogie de l'entité de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtMajGeneEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indication du jour, mois et année suivie de l'heure, minute et seconde, exprimée au jour près, où l'évolution a été apportée à l'entité de vigilance crues. Cette indication est exprimée en heure TU (temps universel).</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtMajGeneEntVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtMajGeneEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/GeneEntVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtMajGeneEntVigiCru"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+
+
+
+
+<!-- ComGeneEntVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/ComGeneEntVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/ComGeneEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Commentaire sur la généalogie de l'entité de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/ComGeneEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Observation, sous forme de texte libre, visant à décrire la nature de l'évolution apportée à l'entité de vigilance crues. </Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ComGeneEntVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ComGeneEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/GeneEntVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ComGeneEntVigiCru"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">255</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>        
+        
+    </DataPropertyRange>
+
+
+
+
+
+
+<!-- TypGeneTCC -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/TypGeneTCC"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TypGeneTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de généalogie du territoire de compétence crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TypGeneTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nature de l'opération de modification de la généalogie du territoire de compétence crues (TCC). Le type de généalogie du territoires de compétence crues prend l'une des valeurs possibles définies selon la nomenclature Sandre n°590. 
+</Literal>    </AnnotationAssertion>
+    
+
+             <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TypGeneTCC"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TypGeneTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/GeneTCC"/>
+    </DataPropertyDomain>
+       <DataPropertyRange>
+       
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TypGeneTCC"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>
+
+
+    </DataPropertyRange>
+
+  	<AnnotationAssertion>
+		<AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+		<IRI>#StParametre</IRI>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/nsa/590</Literal>
+	</AnnotationAssertion>        
+       
+       
+
+
+
+
+<!-- DtHrMajGeneTCC -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DtHrMajGeneTCC"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajGeneTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date et heure de modification de la généalogie du territoire de compétence crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajGeneTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indication du jour, mois et année suivie de l'heure, minute et seconde, exprimée au jour près, où le territoire de compétence crues (TCC) fait l'objet d'une évolution. Cette indication est exprimée en heure TU (temps universel).</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajGeneTCC"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajGeneTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/GeneTCC"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajGeneTCC"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+
+
+
+
+<!-- ComGeneTCC -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/ComGeneTCC"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/ComGeneTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Commentaire sur la modification de la généalogie du territoire de compétence crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/ComGeneTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Complément d'information sur l'opération visant à créer et/ou modifier un territoire de compétence crues (TCC). </Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ComGeneTCC"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ComGeneTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/GeneTCC"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/ComGeneTCC"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">255</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>        
+        
+    </DataPropertyRange>
+
+
+
+
+
+
+<!-- DtDebIntTCC -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DtDebIntTCC"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtDebIntTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date de début du rôle de l'intervenant du territoire de compétence crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtDebIntTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indication du jour, mois et année, exprimée au jour près, où l'intervenant commence à assurer son rôle vis à vis d'un territoire de compétence crues (TCC). Cette indication est exprimée en heure TU (temps universel).</Literal>    </AnnotationAssertion>
+    
+
+    <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtDebIntTCC"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtDebIntTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/IntTCC"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtDebIntTCC"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+        
+
+
+
+<!-- RoIntTCC -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/RoIntTCC"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/RoIntTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rôle de l'intervenant du territoire de compétence crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/RoIntTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rôle assuré par l'intervenant vis à vis d'un territoire de compétence crues (TCC). Il prend l'une des valeurs possibles administrées par le Sandre selon la nomenclature n°850.</Literal>    </AnnotationAssertion>
+    
+
+             <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/RoIntTCC"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/RoIntTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/IntTCC"/>
+    </DataPropertyDomain>
+       <DataPropertyRange>
+       
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/RoIntTCC"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>
+
+
+    </DataPropertyRange>
+
+  	<AnnotationAssertion>
+		<AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+		<IRI>#StParametre</IRI>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/nsa/850</Literal>
+	</AnnotationAssertion>        
+       
+       
+
+
+
+
+<!-- DtFinIntTCC -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DtFinIntTCC"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtFinIntTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date de fin du rôle de l'intervenant du territoire de compétence crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtFinIntTCC</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indication du jour, mois et année, exprimée au jour près, à partir de laquelle l'intervenant n'assure plus son rôle vis à vis du territoire de compétence crues (TCC). Cette indication est exprimée en heure TU (temps universel). Tant que la date de fin n'est pas renseignée, l'intervenant continue d'assurer son rôle vis à vis du TCC. </Literal>    </AnnotationAssertion>
+    
+
+    <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtFinIntTCC"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtFinIntTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/IntTCC"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtFinIntTCC"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+        
+
+
+
+
+
+<!-- CdEntVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/CdEntVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/CdEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Code de l'entité de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/CdEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifiant, unique et non signifiant, de l'entité de vigilance crues. La gestion des identifiants uniques des entités de vigilance crues est assurée par le service central d'hydrométéorologie et d'appui à la prévision des inondations (Schapi). Les créations et les modifications des entités de vigilance crues peuvent être demandées par leurs administrateurs via le site Web du service d'administration national des données et des référentiels sur l'eau (Sandre)  ; le  Schapi est ensuite chargé de les valider.
+
+Notons que ces administrateurs peuvent être  des services de prévision des crues (SPC), des cellules de veille hydrométéorologique (CVH) ....
+
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/CdEntVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/CdEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/CdEntVigiCru"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- TypEntVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/TypEntVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TypEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de l'entité de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/TypEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Catégorie d'entité de vigilance crues. Le type de l'entité de vigilance crues repose sur la liste des valeurs possibles administrées par le Sandre selon la nomenclature n°849.</Literal>    </AnnotationAssertion>
+    
+
+             <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TypEntVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TypEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </DataPropertyDomain>
+       <DataPropertyRange>
+       
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TypEntVigiCru"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>
+
+
+    </DataPropertyRange>
+
+  	<AnnotationAssertion>
+		<AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+		<IRI>#StParametre</IRI>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/nsa/849</Literal>
+	</AnnotationAssertion>        
+       
+       
+
+
+
+
+<!-- LbEntVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/LbEntVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/LbEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Libellé de l'entité de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/LbEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Désignation de l'entité de vigilance crues. La convention d'écriture du nom commun de l'entité de la vigilance crues est imposée par le Réglement d'Information sur les Crues (RIC).
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/LbEntVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/LbEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/LbEntVigiCru"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- AcroEntVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/AcroEntVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/AcroEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Acronyme de l'entité de vigilance crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/AcroEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Abréviation commune de l'entité de vigilance crues. Aucune convention d'écriture n'est imposée. </Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/AcroEntVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/AcroEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/AcroEntVigiCru"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- GeomEntVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/GeomEntVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/GeomEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Géométrie de l'entité de vigilance de crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/GeomEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Forme géographique de l'entité de vigilance crues - représentée par un point, une courbe ou une surface - sur laquelle porte la vigilance crues. Prenons l'exemple d'un tronçon de vigilance  crues, il s'agit d'un linéaire de cours d'eau assimilable à un tronçon hydrographique thématique lui même assimilable à une entité de vigilance crues représentée par une ou plusieurs lignes. Prenons l'autre exemple d'une station hydrométrique, il s'agit d'un lieu placé sur un cours d'eau assimilable géométriquement à une entité de vigilance crues représentée par un point.
+</Literal>    </AnnotationAssertion>
+    
+
+        
+
+
+
+<!-- DtHrCreatEntVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DtHrCreatEntVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrCreatEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date et heure de création de l'entité de vigilance de crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrCreatEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indication du jour, mois et année suivie de l'heure, minute et seconde, exprimée au jour près, où l'entité de vigilance crues est créée. Cette indication est exprimée en heure TU (temps universel).</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrCreatEntVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrCreatEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrCreatEntVigiCru"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+
+
+
+
+<!-- DtHrMajEntVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DtHrMajEntVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date et heure de mise à jour de l'entité de vigilance de crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indication du jour, mois et année suivie de l'heure, minute et seconde, exprimée au jour près, où l'entité de vigilance crues est mise à jour. Cette indication est exprimée en heure TU (temps universel).</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajEntVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DtHrMajEntVigiCru"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+
+
+
+
+<!-- StEntVigiCru -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/StEntVigiCru"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/StEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Statut de l'entité de vigilance de crues</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/StEntVigiCru</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Indication sur l'état de validité de l'entité de vigilance crues. Lorsque le statut prend pour valeur possible 'validé', des informations de vigilance peuvent être rattachées à l'entité de vigilance crues. Dès lors qu'il prend la valeur possible 'gelé', plus aucune information de vigilance ne peut être rattachée à l'entité de vigilance crues. La date de mise à jour est actualisée en conséquence. Le statut de l'entité vigilance crues prend l'une des valeurs possibles administrées par le Sandre selon la nomenclature n°390. 
+
+
+</Literal>    </AnnotationAssertion>
+    
+
+             <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/StEntVigiCru"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/StEntVigiCru"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </DataPropertyDomain>
+       <DataPropertyRange>
+       
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/StEntVigiCru"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>
+
+
+    </DataPropertyRange>
+
+  	<AnnotationAssertion>
+		<AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+		<IRI>#StParametre</IRI>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/nsa/390</Literal>
+	</AnnotationAssertion>        
+       
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- NatureTexteReg -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/NatureTexteReg"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/NatureTexteReg</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nature du texte réglementaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://owl.sandre.eaufrance.fr/vic/1.1/NatureTexteReg</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nature des textes réglementaires qui régissent l'organisation des services de l'Etat, avec d'éventuels partenaires, sur un territoire donné, en matière de production et de transmission d'informations sur les risques de crues.  La nature du texte réglementaire prend l'une des valeurs possibles définies dans la nomenclature Sandre n°950. 
+</Literal>    </AnnotationAssertion>
+    
+
+             <Declaration>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/NatureTexteReg"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/NatureTexteReg"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TexteReglemTCC"/>
+    </DataPropertyDomain>
+       <DataPropertyRange>
+       
+        <DataProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/NatureTexteReg"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>
+
+
+    </DataPropertyRange>
+
+  	<AnnotationAssertion>
+		<AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+		<IRI>#StParametre</IRI>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/nsa/950</Literal>
+	</AnnotationAssertion>        
+       
+       
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // DECLARATION DES OBJECT PROPERTIES
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+
+
+     <!-- aPourTCC -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourTCC"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourTCC"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+    </ObjectPropertyRange>
+
+            <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourTCC"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+        </ObjectExactCardinality>
+    </SubClassOf>        
+
+<!-- estTCCDe -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estTCCDe"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estTCCDe"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estTCCDe"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estTCCDe"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- estAdministrateurDe -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estAdministrateurDe"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estAdministrateurDe"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/int/2/Intervenant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estAdministrateurDe"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/int/2/Intervenant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estAdministrateurDe"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- administre -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/administre"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/administre"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/administre"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/int/2/Intervenant"/>
+    </ObjectPropertyRange>
+
+            <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/administre"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/int/2/Intervenant"/>
+        </ObjectExactCardinality>
+    </SubClassOf>        
+    <!-- estProducteurDeLInfo -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estProducteurDeLInfo"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estProducteurDeLInfo"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/int/2/Intervenant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estProducteurDeLInfo"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/int/2/Intervenant"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estProducteurDeLInfo"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- aEteProduitePar -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aEteProduitePar"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aEteProduitePar"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aEteProduitePar"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/int/2/Intervenant"/>
+    </ObjectPropertyRange>
+
+                    <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aEteProduitePar"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/int/2/Intervenant"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <!-- aPourSynthese -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourSynthese"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourSynthese"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourSynthese"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </ObjectPropertyRange>
+
+            <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourSynthese"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>        
+
+<!-- estLaSyntheseDe -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estLaSyntheseDe"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estLaSyntheseDe"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estLaSyntheseDe"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estLaSyntheseDe"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- aNPlusUn -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aNPlusUn"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aNPlusUn"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aNPlusUn"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aNPlusUn"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- aNMoinsUn -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aNMoinsUn"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aNMoinsUn"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aNMoinsUn"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aNMoinsUn"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- porteSurLEntite -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/porteSurLEntite"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/porteSurLEntite"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/porteSurLEntite"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyRange>
+
+            <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/porteSurLEntite"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        </ObjectExactCardinality>
+    </SubClassOf>        
+
+<!-- infoDeVigilanceDeLEntite -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/infoDeVigilanceDeLEntite"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/infoDeVigilanceDeLEntite"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/infoDeVigilanceDeLEntite"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/infoDeVigilanceDeLEntite"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- estEnAmont -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estEnAmont"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estEnAmont"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estEnAmont"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estEnAmont"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- estEnAval -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estEnAval"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estEnAval"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estEnAval"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estEnAval"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- precedeLInfo -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/precedeLInfo"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/precedeLInfo"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/precedeLInfo"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </ObjectPropertyRange>
+
+            <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/precedeLInfo"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>        
+
+<!-- succedeALInfo -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/succedeALInfo"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/succedeALInfo"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/succedeALInfo"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+    </ObjectPropertyRange>
+
+            <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/succedeALInfo"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/InfoVigiCru"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>        
+    <!-- peutServirDe -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/peutServirDe"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/peutServirDe"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/hyd/2.2/LieuHydro"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/peutServirDe"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/PointEntVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/hyd/2.2/LieuHydro"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/peutServirDe"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/PointEntVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- correspondA -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/correspondA"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/correspondA"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/PointEntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/correspondA"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/hyd/2.2/LieuHydro"/>
+    </ObjectPropertyRange>
+
+            <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/PointEntVigiCru"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/correspondA"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/hyd/2.2/LieuHydro"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>        
+    <!-- compose -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/compose"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/compose"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SegTronEntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/compose"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TronEntVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SegTronEntVigiCru"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/compose"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TronEntVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- estComposeDe -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estComposeDe"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estComposeDe"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TronEntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estComposeDe"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SegTronEntVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TronEntVigiCru"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estComposeDe"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/SegTronEntVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- reglementeLEntite -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/reglementeLEntite"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/reglementeLEntite"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/tre/1/TexteReglem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/reglementeLEntite"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/tre/1/TexteReglem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/reglementeLEntite"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- entiteEstReglementePar -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/entiteEstReglementePar"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/entiteEstReglementePar"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/entiteEstReglementePar"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/tre/1/TexteReglem"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/entiteEstReglementePar"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/tre/1/TexteReglem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- aPourCommuneGeo -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourCommuneGeo"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourCommuneGeo"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourCommuneGeo"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/com/4/Commune"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourCommuneGeo"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/com/4/Commune"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- estCommuneGeo -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estCommuneGeo"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estCommuneGeo"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/com/4/Commune"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estCommuneGeo"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/com/4/Commune"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estCommuneGeo"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- aPourCommuneReg -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourCommuneReg"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourCommuneReg"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourCommuneReg"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/com/4/Commune"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourCommuneReg"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/com/4/Commune"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- estCommuneReg -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estCommuneReg"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estCommuneReg"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/com/4/Commune"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estCommuneReg"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/com/4/Commune"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estCommuneReg"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- estConcerneePar -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estConcerneePar"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estConcerneePar"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/com/4/CircAdminBassin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estConcerneePar"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/com/4/CircAdminBassin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estConcerneePar"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- concerne -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/concerne"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/concerne"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/concerne"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/com/4/CircAdminBassin"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/TCC"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/concerne"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/com/4/CircAdminBassin"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- aPourDistrictHydro -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourDistrictHydro"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourDistrictHydro"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/aPourDistrictHydro"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/mdo/1.3/DistrictHydro"/>
+    </ObjectPropertyRange>
+
+            <SubClassOf>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://id.eaufrance.fr/ddd/mdo/1.3/aPourDistrictHydro"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/DistrictHydro"/>
+        </ObjectExactCardinality>
+    </SubClassOf>        
+
+<!-- estLeDistrictHydro -->
+    <Declaration>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estLeDistrictHydro"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estLeDistrictHydro"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/mdo/1.3/DistrictHydro"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estLeDistrictHydro"/>
+        <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/mdo/1.3/DistrictHydro"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://owl.sandre.eaufrance.fr/vic/1.1/estLeDistrictHydro"/>
+            <Class IRI="http://owl.sandre.eaufrance.fr/vic/1.1/EntVigiCru"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+
+
+
+</Ontology>

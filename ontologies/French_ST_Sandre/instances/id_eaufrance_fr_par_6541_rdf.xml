@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:ns5="http://owl.sandre.eaufrance.fr/par/2.3#"
+	xmlns:par="http://id.eaufrance.fr/ddd/par/3/" >
+  <rdf:Description rdf:about="http://id.eaufrance.fr/par/6541">
+    <rdf:type rdf:resource="http://owl.sandre.eaufrance.fr/par/2.3#ParametreChimique" />
+    <rdf:type rdf:resource="http://owl.sandre.eaufrance.fr/par/2.3#Parametre" />
+    <rdf:type>http://id.eaufrance.fr/ddd/PAR/Parametre</rdf:type>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept" />
+    <rdfs:label>Somme du 3-Chlorophenol et du 4-Chlorophenol</rdfs:label>
+    <rdfs:comment>Somme du Chlorophenol-3 de formule brute C6H5ClO(code Sandre : [1651]) et du Chlorophenol-4 de formule brute C6H5ClO (code Sandre : [1650])</rdfs:comment>
+    <dc:title>Somme du 3-Chlorophenol et du 4-Chlorophenol</dc:title>
+    <skos:prefLabel>3+4 chlorophenol</skos:prefLabel>
+    <dc:identifier>http://id.eaufrance.fr/par/6541</dc:identifier>
+    <dc:language>fr</dc:language>
+    <dc:source>http://www.sandre.eaufrance.fr/</dc:source>
+    <foaf:page>http://id.eaufrance.fr/par/6541</foaf:page>
+    <dc:publisher>Service d&#39;Administration National des Données et Référentiels sur l&#39;Eau (SANDRE)</dc:publisher>
+    <ns5:NomParametre>Somme du 3-Chlorophenol et du 4-Chlorophenol</ns5:NomParametre>
+    <ns5:CdParametre>6541</ns5:CdParametre>
+    <skos:inScheme>http://owl.sandre.eaufrance.fr/par/3/sandre_fmt_owl_par.owl</skos:inScheme>
+    <dc:subject>PARAMÈTRES</dc:subject>
+    <skos:altLabel>3+4ClPheno</skos:altLabel>
+    <skos:definition>Ce paramètre est la somme des 2 paramètres suivants : 
+- Chlorophenol-3 de code Sandre n°1651 ;
+- Chlorophenol-4 de code Sandre n°1650.</skos:definition>
+    <par:AuteurParametre>Bureau de Recherches Géologiques et Minières - Or</par:AuteurParametre>
+    <par:Contributor rdf:resource="http://id.eaufrance.fr/int/31490172900066" />
+    <par:DateCreationParametre>2009-10-26</par:DateCreationParametre>
+    <par:DateMajParametre>2015-08-18</par:DateMajParametre>
+    <par:DfParametre>Ce paramètre est la somme des 2 paramètres suivants : 
+- Chlorophenol-3 de code Sandre n°1651 ;
+- Chlorophenol-4 de code Sandre n°1650.</par:DfParametre>
+    <par:GroupeParametres rdf:resource="http://id.eaufrance.fr/gpr/117" />
+    <par:LbCourtParametre>3+4ClPheno</par:LbCourtParametre>
+    <par:LbLongParametre>3+4 chlorophenol</par:LbLongParametre>
+    <par:NatParametre rdf:resource="http://id.eaufrance.fr/nsa/535#2" />
+    <par:NomParametre>Somme du 3-Chlorophenol et du 4-Chlorophenol</par:NomParametre>
+    <par:ParametreCalcule>1</par:ParametreCalcule>
+    <par:ParametreChimique rdf:nodeID="b46549374" />
+    <par:StParametre rdf:resource="http://id.eaufrance.fr/nsa/390#Valid%C3%A9" />
+    <par:TypeParametre rdf:resource="http://id.eaufrance.fr/nsa/541#2" />
+    <ns5:DfParametre>Somme du Chlorophenol-3 de formule brute C6H5ClO(code Sandre : [1651]) et du Chlorophenol-4 de formule brute C6H5ClO (code Sandre : [1650])</ns5:DfParametre>
+    <ns5:StParametre>Validé</ns5:StParametre>
+    <par:CdParametre>6541</par:CdParametre>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="b46549374">
+    <par:UniteMesure rdf:resource="http://id.eaufrance.fr/urf/133" />
+    <par:UniteMesure rdf:resource="http://id.eaufrance.fr/urf/129" />
+  </rdf:Description>
+</rdf:RDF>

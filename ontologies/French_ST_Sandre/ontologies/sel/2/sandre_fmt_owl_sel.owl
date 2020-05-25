@@ -1,0 +1,1001 @@
+<Ontology xmlns="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xml:base="http://id.eaufrance.fr/ddd/sel/2" ontologyIRI="http://id.eaufrance.fr/ddd/sel/2" versionIRI="http://id.eaufrance.fr/ddd/sel/2">
+	<Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+	<Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+	<Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+	<Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="xsi" IRI="http://www.w3.org/2001/XMLSchema-instance"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+	<Prefix name="pts" IRI="http://id.eaufrance.fr/ddd/pts/1"/>
+	<Prefix name="dc" IRI="http://id.eaufrance.fr/ddd/dc/3"/> 
+	<Prefix name="apt" IRI="http://id.eaufrance.fr/ddd/apt/2.1"/>
+	<Prefix name="mdo" IRI="http://id.eaufrance.fr/ddd/mdo/1.3"/> 
+
+
+<!-- Définition des métadonnées de l'ontologie -->
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="rdfs:label"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lieux de surveillance</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:title"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lieux de surveillance</Literal>
+	</Annotation>
+   
+   
+   <Annotation>
+   <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lieux de surveillance</Literal>
+   </Annotation>
+   
+   
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1-&gt;2 :
+		                                                                                                          La notion de station de mesure de la qualité des eaux littorales est remplacée par celle de lieu de surveillance.
+		                                                                                                          
+		                                                                                                          21/12/2017 Erratum :
+		                                                                                                          - Taille des attributs "Type d'acquisition des coordonnées du lieu de surveillance" et "Type de projection des coordonnées du lieu de surveillance" augmentée à 25 caractères.
+		                                                                                                          - Rattachement aux dernières versions des dictionnaires appellation de taxon 2.1, masse d'eau 1.3 et dispositif de collecte 3
+		                                                                                                          - Ajout de 3 attributs Géométrie... dans le concept de Lieux de surveillance
+		                                                                                                          
+		                                                                                                          </Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description des lieux de surveillance des eaux littorales</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/int/1470</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:subject"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Eaux littorales</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:description"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Description des lieux de surveillance des eaux littorales</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:publisher"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ministère chargé de l'environnement</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:contributor"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ifremer;OIEau;AFB</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:created"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2009-01-15</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:modified"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2017-12-21</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:valid"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2017-12-21</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:license"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://creativecommons.org/licenses/by-nd/3.0/fr</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:coverage"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">France</Literal>
+	</Annotation>
+	<Annotation>
+		<AnnotationProperty abbreviatedIRI="dcterms:format"/>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">owl/xml</Literal>
+	</Annotation>
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // DECLARATION DES CLASSES
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+<!-- http://id.eaufrance.fr/ddd/sel/2/LieuSurv -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+</Declaration>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/LieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">LIEUX DE SURVEILLANCE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/LieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lieu géographique où il est prévu d'effectuer des observations et/ou des mesures. Il est localisé de façon unique par son emprise cartographique sous forme de polygone ou de ligne ou de point. 
+Les informations descriptives du lieu de surveillance relèvent de la responsabilité de l'Ifremer.
+</Literal>    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/LieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Classe</Literal>
+    </AnnotationAssertion>
+        <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/LieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lieu géographique où il est prévu d'effectuer des observations et/ou des mesures. Il est localisé de façon unique par son emprise cartographique sous forme de polygone ou de ligne ou de point. 
+Les informations descriptives du lieu de surveillance relèvent de la responsabilité de l'Ifremer.
+</Literal>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/pts/1/Port -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/pts/1/Port"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/pts/1/Port</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/pts/1/Port</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/pts/1/Port</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PORT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/pts/1/Port</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Abri naturel ou artificiel pour les navires, muni d'ouvrages et d'installations nécessaires à l'embarquement et au débarquement des passagers ou des marchandises, et le cas échéant de bien d'autres installations associées au trafic maritimes (stockage, entretien, réparations, etc.). 
+
+Géographiquement, un port est un ensemble de bassins contigus ayant une continuité hydraulique et au moins une sortie commune en mer. 
+
+Le port est en connexion avec la mer ou l'océan directement ou par une entité hydrographique (cours d'eau, canal, …) qui sert de liaison entre le port et l'entité maritime (exemple : le port de Rochefort sur Mer relié à l'Atlantique par la Charente). 
+
+Le port est localisé sur une seule commune, correspondant à la commune sur laquelle la totalité ou la plus grand partie des installations portuaires se situe. 
+
+Le port est géré par le gestionnaire du port qui veille à son bon fonctionnement. A ce titre, il gère notamment les installations, édicte le règlement du port et veille à l'application de ce règlement sur la zone portuaire administrative.
+
+Les informations sur les ports relèvent de la responsabilité des gestionnaires qui utilisent le port</Literal>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/dc/3/DispositifCollecte -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/dc/3/DispositifCollecte"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/dc/3/DispositifCollecte</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/dc/3/DispositifCollecte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/dc/3/DispositifCollecte</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">DISPOSITIF DE COLLECTE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/dc/3/DispositifCollecte</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Les dispositifs de collecte des données sur l’eau désignent tout dispositif  (tout moyen) qui permet par mesure ou non d’acquérir des données (des connaissances) sur :
+                     - les milieux aquatiques
+                     - les ressources en eau
+                     - les usages de l’eau 
+                     - les pressions (et impacts associés) qui s’exercent sur les milieux 
+                       et les ressources
+                     - les données économiques afférentes
+pour une finalité précise.
+
+
+
+
+
+</Literal>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/apt/2.1/GrpAppelTaxon -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/apt/2.1/GrpAppelTaxon"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/apt/2.1/GrpAppelTaxon</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/apt/2.1/GrpAppelTaxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/apt/2.1/GrpAppelTaxon</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">GROUPE D'APPELLATION TAXONOMIQUE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/apt/2.1/GrpAppelTaxon</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Un groupe d'appellation de taxon est un ensemble d'appellation de taxons présentant des caractéristiques communes. Les critères permettant de définir des groupes d'appellation de taxon peuvent être complexes et multiples. Ces critères sont en rapport avec la finalité pour laquelle un regroupement de taxons est défini.
+Un groupe d'appellation de taxon peut contenir plusieurs sous-groupes, selon un ordre hiérarchique pouvant aller jusqu'à plusieurs niveaux inférieurs. Un groupe d'appellation de taxon peut être rattaché à plusieurs groupes d'appellation de taxon parents.
+Les différents groupes d'appellation de taxon sont administrés par le Sandre. </Literal>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/mdo/1.3/MasseDEau -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/mdo/1.3/MasseDEau"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/mdo/1.3/MasseDEau</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/mdo/1.3/MasseDEau</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/mdo/1.3/MasseDEau</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MASSE D'EAU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/mdo/1.3/MasseDEau</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">La masse d'eau est le découpage territorial élémentaire des Milieux aquatiques destinée à être l'unité d'évaluation de la DCE.</Literal>    </AnnotationAssertion>
+
+<!-- http://id.eaufrance.fr/ddd/apt/2.1/AppelTaxon -->
+<Declaration>
+<Class IRI="http://id.eaufrance.fr/ddd/apt/2.1/AppelTaxon"/>
+</Declaration>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://id.eaufrance.fr/ddd/apt/2.1/AppelTaxon</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/ddd/apt/2.1/AppelTaxon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/apt/2.1/AppelTaxon</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">APPELLATION DU TAXON</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/apt/2.1/AppelTaxon</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Désignation d'un taxon qui est une unité générique qui fait référence à la systématique - forme de classification dérivant du même ancêtre. Selon qu'on remonte plus ou moins haut dans l'origine du taxon, on aura des taxons supérieurs (embranchements, classes) ou des taxon inférieurs (genres, espèces, races). Il arrive que la découverte d'un taxon attribuée à un chercheur soit remise en cause par un autre, ce qui conduit à une appellation d'un taxon à être vue comme :
+- "référente" vis à vis d'autres appellations synonymes,
+- "synonyme" d'une autre appellation référente.
+
+
+La liste des appellations des taxons est administrée par le SANDRE.</Literal>    </AnnotationAssertion>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // DECLARATION DES DATA PROPERTIES
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+<!-- CdLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/CdLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/CdLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Code du lieu de surveillance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/CdLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Identifiant unique du lieu de surveillance. Cette information du lieu de surveillance relève de la responsabilité de l'Ifremer.</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/CdLieuSurv"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/CdLieuSurv"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </DataPropertyDomain>    
+    <DataPropertyRange>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/CdLieuSurv"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>        
+        
+    </DataPropertyRange>
+ 
+
+
+
+<!-- LbLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/LbLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/LbLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Libellé du lieu de surveillance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/LbLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nom donné au lieu de surveillance. Cette information du lieu de surveillance relève de la responsabilité de l'Ifremer.
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/LbLieuSurv"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/LbLieuSurv"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/LbLieuSurv"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- MnLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/MnLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/MnLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mnémonique du lieu de surveillance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/MnLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Code sinifiant identifiant le lieu de surveillance. Il est produit sous cette forme [Code de la zone marine]-[type de topologie du lieu de surveillance]-[code du lieu de surveillance dans la zone marine]. Le code de la zone marine est sur 3 caractères. Le type de topologie est sur 1 caractère selon la codification S : Surfacique, L : Linéaire, P : Ponctuel. Le code du lieu de surveillance de la zone est sur 3 caractères. 
+
+Cette information du lieu de surveillance relève de la responsabilité de l'Ifremer.
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/MnLieuSurv"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/MnLieuSurv"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/MnLieuSurv"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- FormHrLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/FormHrLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/FormHrLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Format de l'heure du lieu de surveillance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/FormHrLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ecart horaire entre "Universal Time" et l'heure locale en hiver du lieu de surveillance (0, +1, -4...). L'écart par défaut est +1.</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/FormHrLieuSurv"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/FormHrLieuSurv"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </DataPropertyDomain>    
+    <DataPropertyRange>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/FormHrLieuSurv"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>        
+        
+    </DataPropertyRange>
+ 
+
+
+
+<!-- CoordXLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/CoordXLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/CoordXLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Coordonnée X du lieu de surveillance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/CoordXLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Coordonnée X du lieu de surveillance dans la projection indiquée. Par convention, celle-ci est en WGS 84 géographique. Elle est exprimée avec la précision maximale du mètre.
+
+Cette information du lieu de surveillance relève de la responsabilité de l'Ifremer.
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/CoordXLieuSurv"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/CoordXLieuSurv"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </DataPropertyDomain>    
+    <DataPropertyRange>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/CoordXLieuSurv"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>        
+        
+    </DataPropertyRange>
+ 
+
+
+
+<!-- CoordYLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/CoordYLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/CoordYLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Coordonnée Y du lieu de surveillance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/CoordYLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Coordonnée Y du lieu de surveillance dans la projection indiquée. Par convention, celle-ci est en WGS 84 géographique. Elle est exprimée avec la précision maximale du mètre.
+
+Cette information du lieu de surveillance relève de la responsabilité de l'Ifremer.</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/CoordYLieuSurv"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/CoordYLieuSurv"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </DataPropertyDomain>    
+    <DataPropertyRange>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/CoordYLieuSurv"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>        
+        
+    </DataPropertyRange>
+ 
+
+
+
+<!-- TypCoordLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/TypCoordLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/TypCoordLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type d'acquisition des coordonnées du lieu de surveillance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/TypCoordLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Manière dont les coordonnées du lieu de surveillance sont acquises. Cette information relève de la responsabilité de l'Ifremer. Elle repose sur la nomenclature n°598 diffusée par le Sandre.</Literal>    </AnnotationAssertion>
+    
+
+             <Declaration>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/TypCoordLieuSurv"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/TypCoordLieuSurv"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </DataPropertyDomain>
+       <DataPropertyRange>
+       
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/TypCoordLieuSurv"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>
+
+
+    </DataPropertyRange>
+
+  	<AnnotationAssertion>
+		<AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+		<IRI>#StParametre</IRI>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/nsa/598</Literal>
+	</AnnotationAssertion>        
+       
+       
+
+
+
+
+<!-- ProjCoordLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/ProjCoordLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/ProjCoordLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Type de projection des coordonnées du lieu de surveillance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/ProjCoordLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Cet attribut est un code à deux positions qui indique la projection dans laquelle s'expriment les coordonnées de la station de mesure. Les coordonnées devront être déterminées sur une carte dont l'échelle est supérieure ou égale au 50 000e.
+
+Selon la loi d'aménagement du territoire (Décret no 2000-1276 du 26 décembre 2000), toutes les coordonnées seront en Lambert 93, exceptées ceux situés en dehors du territoire métropolitain et corse.
+
+La liste des codes possibles pour cet attribut est totalement compatible avec la norme EDIGéO, elle est décrite dans la nomenclature n°22.
+
+Cette information est administrée par les Agences de l'Eau et relève de la responsabilité du ou des maîtres d'ouvrages des réseaux de mesure ou utilisations auxquelles la station est rattachée
+</Literal>    </AnnotationAssertion>
+    
+
+             <Declaration>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/ProjCoordLieuSurv"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/ProjCoordLieuSurv"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </DataPropertyDomain>
+       <DataPropertyRange>
+       
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/ProjCoordLieuSurv"/>
+                <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </FacetRestriction>
+            </DatatypeRestriction>
+
+
+    </DataPropertyRange>
+
+  	<AnnotationAssertion>
+		<AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+		<IRI>#StParametre</IRI>
+		<Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://id.eaufrance.fr/nsa/22</Literal>
+	</AnnotationAssertion>        
+       
+       
+
+
+
+
+<!-- ProfLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/ProfLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/ProfLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Profondeur de l'eau</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/ProfLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Profondeur de l'eau (bathymétrie), exprimée en mètre, prise à la verticale du lieu de surveillance au regard du 0 - de référence - des cartes SHOM. La bathymétrie peut être positive ou négative. Cette information du lieu de surveillance relève de la responsabilité de l'Ifremer.
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/ProfLieuSurv"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/ProfLieuSurv"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </DataPropertyDomain>    
+    <DataPropertyRange>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/ProfLieuSurv"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>        
+        
+    </DataPropertyRange>
+ 
+
+
+
+<!-- DateCreLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DateCreLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/DateCreLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date de création du lieu de surveillance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/DateCreLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date de création du lieu de surveillance. Cette information du lieu de surveillance relève de la responsabilité de l'Ifremer.</Literal>    </AnnotationAssertion>
+    
+
+    <Declaration>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/DateCreLieuSurv"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/DateCreLieuSurv"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/DateCreLieuSurv"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+        
+
+
+
+<!-- DateMajLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/DateMajLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/DateMajLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date de mise à jour des informations sur le lieu de surveillance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/DateMajLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Date de mise à jour des informations descriptives du lieu de surveillance. Cette information du lieu de surveillance relève de la responsabilité de l'Ifremer.</Literal>    </AnnotationAssertion>
+    
+
+    <Declaration>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/DateMajLieuSurv"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/DateMajLieuSurv"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/DateMajLieuSurv"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+        
+
+
+
+<!-- ComLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/ComLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/ComLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Commentaire sur le lieu de surveillance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/ComLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Information descriptive du lieu de surveillance. Cette information du lieu de surveillance relève de la responsabilité de l'Ifremer.
+</Literal>    </AnnotationAssertion>
+    
+
+            <Declaration>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/ComLieuSurv"/>
+    </Declaration>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/ComLieuSurv"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </DataPropertyDomain>   
+    <DataPropertyRange>
+        <DataProperty IRI="http://id.eaufrance.fr/ddd/sel/2/ComLieuSurv"/>
+            <Datatype abbreviatedIRI="xsd:string"/>        
+        
+    </DataPropertyRange>
+
+
+
+
+<!-- PointGeomLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/PointGeomLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/PointGeomLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Géométrie représentée par un point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/PointGeomLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Géométrie du lieux de surveillance représentée par un point.</Literal>    </AnnotationAssertion>
+    
+
+        
+
+
+
+<!-- SurfaceGeomLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/SurfaceGeomLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/SurfaceGeomLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Géométrie représentée par un polygone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/SurfaceGeomLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Géométrie du lieux de surveillance représentée par un polygone.</Literal>    </AnnotationAssertion>
+    
+
+        
+
+
+
+<!-- LigneGeomLieuSurv -->
+    <FunctionalDataProperty>
+        <DataProperty IRI="/LigneGeomLieuSurv"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/LigneGeomLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Géométrie représentée par une ligne</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://id.eaufrance.fr/ddd/sel/2/LigneGeomLieuSurv</IRI>
+        <Literal xml:lang="fr" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Géométrie du lieux de surveillance représentée par une ligne.</Literal>    </AnnotationAssertion>
+    
+
+        
+
+
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // DECLARATION DES OBJECT PROPERTIES
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+
+
+     <!-- estSupportUtilise -->
+    <Declaration>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estSupportUtilise"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estSupportUtilise"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/apt/2.1/GrpAppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estSupportUtilise"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/apt/2.1/GrpAppelTaxon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estSupportUtilise"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- seCaracteriseParLeGroupe -->
+    <Declaration>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/seCaracteriseParLeGroupe"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/seCaracteriseParLeGroupe"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/seCaracteriseParLeGroupe"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/apt/2.1/GrpAppelTaxon"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/seCaracteriseParLeGroupe"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/apt/2.1/GrpAppelTaxon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- estSupport -->
+    <Declaration>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estSupport"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estSupport"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/apt/2.1/AppelTaxon"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estSupport"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/apt/2.1/AppelTaxon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estSupport"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- seCaracterisePar -->
+    <Declaration>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/seCaracterisePar"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/seCaracterisePar"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/seCaracterisePar"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/apt/2.1/AppelTaxon"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/seCaracterisePar"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/apt/2.1/AppelTaxon"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- comporte -->
+    <Declaration>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/comporte"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/comporte"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/mdo/1.3/MasseDEau"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/comporte"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/mdo/1.3/MasseDEau"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/comporte"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- estLocaliseDans -->
+    <Declaration>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estLocaliseDans"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estLocaliseDans"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estLocaliseDans"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/mdo/1.3/MasseDEau"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estLocaliseDans"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/mdo/1.3/MasseDEau"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- couvre -->
+    <Declaration>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/couvre"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/couvre"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/dc/3/DispositifCollecte"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/couvre"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/dc/3/DispositifCollecte"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/couvre"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- estSuiviDansLeCadre -->
+    <Declaration>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estSuiviDansLeCadre"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estSuiviDansLeCadre"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estSuiviDansLeCadre"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/dc/3/DispositifCollecte"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estSuiviDansLeCadre"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/dc/3/DispositifCollecte"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+    <!-- estLie -->
+    <Declaration>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estLie"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estLie"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/pts/1/Port"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estLie"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </ObjectPropertyRange>
+
+                <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/pts/1/Port"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estLie"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>    
+
+<!-- estLocalisePres -->
+    <Declaration>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estLocalisePres"/>
+    </Declaration>
+    
+    
+        <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estLocalisePres"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estLocalisePres"/>
+        <Class IRI="http://id.eaufrance.fr/ddd/pts/1/Port"/>
+    </ObjectPropertyRange>
+
+            <SubClassOf>
+        <Class IRI="http://id.eaufrance.fr/ddd/sel/2/LieuSurv"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://id.eaufrance.fr/ddd/sel/2/estLocalisePres"/>
+            <Class IRI="http://id.eaufrance.fr/ddd/pts/1/Port"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+
+
+
+</Ontology>

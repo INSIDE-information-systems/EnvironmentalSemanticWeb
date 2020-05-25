@@ -1,0 +1,96 @@
+<REFERENTIELS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xml.sandre.eaufrance.fr/scenario/referentiel/4" xsi:schemaLocation="http://xml.sandre.eaufrance.fr/scenario/referentiel/4 http://xml.sandre.eaufrance.fr/scenario/referentiel/4/sandre_sc_referentiel.xsd">
+    <Scenario>
+    <CodeScenario>REFERENTIEL</CodeScenario>
+    <VersionScenario>4</VersionScenario>
+    <NomScenario>Diffusion de listes de référence par le Sandre</NomScenario>
+    <DateCreationFichier>2020-05-18</DateCreationFichier>
+    <DateDebutReference>1987-03-20</DateDebutReference>
+    <DateFinReference>2020-05-18</DateFinReference>
+    <Emetteur>
+      <CdIntervenant schemeAgencyID="SANDRE">1470</CdIntervenant>
+      <NomIntervenant>Service d'Administration Nationale des Données et Référentiels sur l'Eau</NomIntervenant>
+    </Emetteur>
+  </Scenario>
+    <Referentiel>
+        <CdReferentiel schemeAgencyID="SANDRE">PAR</CdReferentiel>
+        <NomReferentiel>Paramètres</NomReferentiel>
+        <TypeReferentiel>1</TypeReferentiel>
+        <StReferentiel>Validé</StReferentiel>
+        <DateMajReferentiel>2020-05-18T14:41:57</DateMajReferentiel>
+        <NbOccurrences>1</NbOccurrences>
+        <Parametre>
+      <CdParametre>5897</CdParametre>
+      <NomParametre>Méthyl-3-penten-3-one</NomParametre>
+      <StParametre>Validé</StParametre>
+      <AuteurParametre>Bureau de Recherches Géologiques et Minières</AuteurParametre>
+      <DateCreationParametre>2008-03-25</DateCreationParametre>
+      <DateMajParametre>2012-07-04T16:17:41</DateMajParametre>
+      <DfParametre>Substance chimique de formule brute C6H10O</DfParametre>
+      <NatParametre>2</NatParametre>
+      <TypeParametre>2</TypeParametre>
+      <ParametreCalcule>0</ParametreCalcule>
+      <LbCourtParametre>MePentOn</LbCourtParametre>
+      <GroupeParametres>
+        <CdGroupeParametres>52</CdGroupeParametres>
+        <NomGroupeParametres>Aldéhydes et cétones</NomGroupeParametres>
+      </GroupeParametres>
+      <Traduction>
+        <CdNomTradPar>464</CdNomTradPar>
+        <NomTradParametre>3-Penten-2-one, 3-methyl-</NomTradParametre>
+        <LangueNomTradPar>en</LangueNomTradPar>
+      </Traduction>
+      <Synonyme>
+        <CdSynonymeParametre>2002</CdSynonymeParametre>
+        <LbSynonymeParametre>3-Penten-2-one, 3-methyl-</LbSynonymeParametre>
+      </Synonyme>
+      <Synonyme>
+        <CdSynonymeParametre>2003</CdSynonymeParametre>
+        <LbSynonymeParametre>3-Methyl-2-penten-4-one</LbSynonymeParametre>
+      </Synonyme>
+      <Synonyme>
+        <CdSynonymeParametre>2005</CdSynonymeParametre>
+        <LbSynonymeParametre>3-Methylpent-3-en-2-one</LbSynonymeParametre>
+      </Synonyme>
+      <FauxAmis>
+        <CdPolysemeParametre>1081</CdPolysemeParametre>
+        <LbPolysemeParametre>Mesityl oxide</LbPolysemeParametre>
+      </FauxAmis>
+      <GenealogiePar>
+        <DateModificationPar>2008-03-25T00:00:00</DateModificationPar>
+        <TypeGenealogiePar>7</TypeGenealogiePar>
+        <ComGenealogiePar>Création</ComGenealogiePar>
+      </GenealogiePar>
+      <ParametreChimique>
+        <CdCASSubstanceChimique>565-62-8</CdCASSubstanceChimique>
+        <NomIUPACSubstanceChimique>("E")-3-methylpent-3-en-2-one</NomIUPACSubstanceChimique>
+        <UniteMesure>
+          <CdUniteMesure>133</CdUniteMesure>
+          <LbUniteMesure>microgramme par litre</LbUniteMesure>
+          <SymUniteMesure>µg/L</SymUniteMesure>
+          <NatureDeFractionAnalysee>
+            <CdNatureFractionAnalysee>1</CdNatureFractionAnalysee>
+            <LbNatureFractionAnalysee>Fraction liquide</LbNatureFractionAnalysee>
+          </NatureDeFractionAnalysee>
+        </UniteMesure>
+        <UniteMesure>
+          <CdUniteMesure>132</CdUniteMesure>
+          <LbUniteMesure>microgramme par kilogramme de matière sèche</LbUniteMesure>
+          <SymUniteMesure>µg/(kg MS)</SymUniteMesure>
+          <NatureDeFractionAnalysee>
+            <CdNatureFractionAnalysee>2</CdNatureFractionAnalysee>
+            <LbNatureFractionAnalysee>Fraction solide</LbNatureFractionAnalysee>
+          </NatureDeFractionAnalysee>
+        </UniteMesure>
+        <UniteMesure>
+          <CdUniteMesure>129</CdUniteMesure>
+          <LbUniteMesure>microgramme par kilogramme</LbUniteMesure>
+          <SymUniteMesure>µg/kg</SymUniteMesure>
+          <NatureDeFractionAnalysee>
+            <CdNatureFractionAnalysee>2</CdNatureFractionAnalysee>
+            <LbNatureFractionAnalysee>Fraction solide</LbNatureFractionAnalysee>
+          </NatureDeFractionAnalysee>
+        </UniteMesure>
+      </ParametreChimique>
+    </Parametre>
+    </Referentiel>
+</REFERENTIELS>
