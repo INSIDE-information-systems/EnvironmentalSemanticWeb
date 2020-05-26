@@ -1,0 +1,50 @@
+<rdf:RDF
+    xmlns:j.0="http://qudt.org/schema/qudt/"
+    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+    xmlns:env-ui="http://environment.data.gov.uk/registry/structure/ui/"
+    xmlns:ldp="http://www.w3.org/ns/ldp#"
+    xmlns:version="http://purl.org/linked-data/version#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:ui="http://purl.org/linked-data/registry-ui#"
+    xmlns:j.1="http://www.w3.org/ns/adms#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:j.2="https://data.geoscience.fr/def/main#"
+    xmlns:j.3="http://qudt.org/2.1/schema/qudt#"
+    xmlns:ssd="http://www.w3.org/ns/sparql-service-description#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:org="http://www.w3.org/ns/org#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:reg="http://purl.org/linked-data/registry#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:time="http://www.w3.org/2006/time#"
+    xmlns:dgu="http://reference.data.gov.uk/def/reference/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:odrs="http://schema.theodi.org/odrs#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:api="http://purl.org/linked-data/api/vocab#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <j.0:QuantityKind rdf:about="https://data.geoscience.fr/ncl/ObsProp/191">
+    <reg:category rdf:resource="https://data.geoscience.fr/ncl/structure/Category/4"/>
+    <rdf:type rdf:resource="https://data.geoscience.fr/def/main#GroundwaterObservedProperty"/>
+    <skos:prefLabel xml:lang="en">Water conductivity at 25°C</skos:prefLabel>
+    <j.3:unit rdf:resource="https://data.geoscience.fr/ncl/uom/463"/>
+    <skos:notation>191</skos:notation>
+    <skos:topConceptOf rdf:resource="https://data.geoscience.fr/ncl/ObsProp"/>
+    <rdfs:label xml:lang="fr">Conductivité de l'eau à 25°C</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <j.1:status rdf:resource="http://inspire.ec.europa.eu/registry/status/valid"/>
+    <dct:description xml:lang="en"> Water conductivity measured at 25°C</dct:description>
+    <skos:prefLabel xml:lang="fr">Conductivité de l'eau à 25°C</skos:prefLabel>
+    <dct:description xml:lang="fr"> Conductivité électrique de l'eau mesurée ou corrigée à 25°C.</dct:description>
+    <skos:inScheme rdf:resource="https://data.geoscience.fr/ncl/ObsProp"/>
+    <skos:exactMatch rdf:resource="http://registry.it.csiro.au/def/environment/property/electrical_conductivity_water_at_25C"/>
+    <owl:sameAs rdf:resource="http://id.eaufrance.fr/par/1303"/>
+    <rdf:type rdf:resource="https://data.geoscience.fr/def/main#PhysicalObservedProperty"/>
+    <rdfs:label xml:lang="en">Water conductivity at 25°C</rdfs:label>
+  </j.0:QuantityKind>
+</rdf:RDF>

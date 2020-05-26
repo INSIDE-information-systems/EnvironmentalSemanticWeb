@@ -1,0 +1,41 @@
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix odrs:  <http://schema.theodi.org/odrs#> .
+@prefix ssd:   <http://www.w3.org/ns/sparql-service-description#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix env-ui: <http://environment.data.gov.uk/registry/structure/ui/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix version: <http://purl.org/linked-data/version#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix dgu:   <http://reference.data.gov.uk/def/reference/> .
+@prefix ui:    <http://purl.org/linked-data/registry-ui#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix reg:   <http://purl.org/linked-data/registry#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix api:   <http://purl.org/linked-data/api/vocab#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix vs:    <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://data.geoscience.fr/ncl/ObsProp/191>
+        a                  <http://qudt.org/schema/qudt/QuantityKind> , <https://data.geoscience.fr/def/main#GroundwaterObservedProperty> , skos:Concept , <https://data.geoscience.fr/def/main#PhysicalObservedProperty> ;
+        rdfs:label         "Conductivité de l'eau à 25°C"@fr , "Water conductivity at 25°C"@en ;
+        dct:description    " Water conductivity measured at 25°C"@en , " Conductivité électrique de l'eau mesurée ou corrigée à 25°C."@fr ;
+        reg:category       <https://data.geoscience.fr/ncl/structure/Category/4> ;
+        <http://qudt.org/2.1/schema/qudt#unit>
+                <https://data.geoscience.fr/ncl/uom/463> ;
+        owl:sameAs         <http://id.eaufrance.fr/par/1303> ;
+        skos:exactMatch    <http://registry.it.csiro.au/def/environment/property/electrical_conductivity_water_at_25C> ;
+        skos:inScheme      <https://data.geoscience.fr/ncl/ObsProp> ;
+        skos:notation      "191" ;
+        skos:prefLabel     "Water conductivity at 25°C"@en , "Conductivité de l'eau à 25°C"@fr ;
+        skos:topConceptOf  <https://data.geoscience.fr/ncl/ObsProp> ;
+        <http://www.w3.org/ns/adms#status>
+                <http://inspire.ec.europa.eu/registry/status/valid> .

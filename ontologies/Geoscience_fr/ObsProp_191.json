@@ -1,0 +1,74 @@
+{
+  "@id" : "https://data.geoscience.fr/ncl/ObsProp/191",
+  "@type" : [ "http://qudt.org/schema/qudt/QuantityKind", "https://data.geoscience.fr/def/main#GroundwaterObservedProperty", "skos:Concept", "https://data.geoscience.fr/def/main#PhysicalObservedProperty" ],
+  "dct:description" : [ {
+    "@language" : "en",
+    "@value" : " Water conductivity measured at 25°C"
+  }, {
+    "@language" : "fr",
+    "@value" : " Conductivité électrique de l'eau mesurée ou corrigée à 25°C."
+  } ],
+  "reg:category" : {
+    "@id" : "https://data.geoscience.fr/ncl/structure/Category/4"
+  },
+  "http://qudt.org/2.1/schema/qudt#unit" : {
+    "@id" : "https://data.geoscience.fr/ncl/uom/463"
+  },
+  "rdfs:label" : [ {
+    "@language" : "fr",
+    "@value" : "Conductivité de l'eau à 25°C"
+  }, {
+    "@language" : "en",
+    "@value" : "Water conductivity at 25°C"
+  } ],
+  "owl:sameAs" : {
+    "@id" : "http://id.eaufrance.fr/par/1303"
+  },
+  "skos:exactMatch" : {
+    "@id" : "http://registry.it.csiro.au/def/environment/property/electrical_conductivity_water_at_25C"
+  },
+  "skos:inScheme" : {
+    "@id" : "https://data.geoscience.fr/ncl/ObsProp"
+  },
+  "skos:notation" : "191",
+  "skos:prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Water conductivity at 25°C"
+  }, {
+    "@language" : "fr",
+    "@value" : "Conductivité de l'eau à 25°C"
+  } ],
+  "skos:topConceptOf" : {
+    "@id" : "https://data.geoscience.fr/ncl/ObsProp"
+  },
+  "http://www.w3.org/ns/adms#status" : {
+    "@id" : "http://inspire.ec.europa.eu/registry/status/valid"
+  },
+  "@context" : {
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "ssd" : "http://www.w3.org/ns/sparql-service-description#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "qb" : "http://purl.org/linked-data/cube#",
+    "dgu" : "http://reference.data.gov.uk/def/reference/",
+    "dct" : "http://purl.org/dc/terms/",
+    "ui" : "http://purl.org/linked-data/registry-ui#",
+    "reg" : "http://purl.org/linked-data/registry#",
+    "api" : "http://purl.org/linked-data/api/vocab#",
+    "vann" : "http://purl.org/vocab/vann/",
+    "prov" : "http://www.w3.org/ns/prov#",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+    "cc" : "http://creativecommons.org/ns#",
+    "void" : "http://rdfs.org/ns/void#",
+    "odrs" : "http://schema.theodi.org/odrs#",
+    "org" : "http://www.w3.org/ns/org#",
+    "env-ui" : "http://environment.data.gov.uk/registry/structure/ui/",
+    "version" : "http://purl.org/linked-data/version#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "ldp" : "http://www.w3.org/ns/ldp#",
+    "time" : "http://www.w3.org/2006/time#",
+    "vs" : "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}
