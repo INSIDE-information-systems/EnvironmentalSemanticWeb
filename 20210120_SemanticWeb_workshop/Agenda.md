@@ -23,7 +23,7 @@ Présentations de 15-20'
 ### 3°/ Retour d'expérience de chacun (suite)
 - CNRS/MNHN :  TaxRef-LD - 13:00 -> 13:30
 - BRGM : Registres et vocabulaires. La qualité et l'interopérabilité des données par la sémantique - 13:30 - 14:00
-- NrCan - Eric Boisvert: Groundwater Surface water Interoperability Pilot - 14:00 - 14:30
+- NRCan - Eric Boisvert: Groundwater Surface water Interoperability Pilot - 14:00 - 14:30
 - IFREMER - sous réserve confirmation - 14:30 - 15:00
 - ST SANDRE - sous réserve confirmation - 15:00 - 15:30
 - INSIDE - Logique Linked Data de déploiement des nouvelles API OGC – API4INSPIRE (15')
