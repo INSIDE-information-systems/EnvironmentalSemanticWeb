@@ -3,7 +3,8 @@
 ## Agenda
 
 ### Intro 09:00
-* Sylvain Grellet (BRGM/INSIDE)
+* Sylvain Grellet (BRGM/INSIDE) : [Linked data - l’ Interopérabilité grâce au principes du Web](presentations/20210120_INSIDE_SemanticWeb_workshop/0-intro/20210122_Interop_Linked_Data_Feliachi.pptx)
+
 
 ### 1°/ Qu'est ce que le WebSémantique (09:15)
 Les fondements Franck Michel (CNRS)
