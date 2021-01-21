@@ -7,11 +7,14 @@
 
 
 ### 1°/ Qu'est ce que le WebSémantique (09:15)
-Franck Michel (CNRS) : [Web sémantique, web de données, données liées](/1-set_the_scene/Franck_Michel-IntroWS.pdf)
+Franck Michel (CNRS) : [Web sémantique, web de données, données liées](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/1-set_the_scene/Franck_Michel-IntroWS.pdf)
 - end ->  ~ 10:15
 
 ### 2°/ Evolutions/Dynamiques en cours dans le WebSemantique/LinkedData  ~ 10:30
-- Sylvain Grellet / Abdelfettah Feliachi / Franck Michel
+- Sylvain Grellet / Abdelfettah Feliachi (BRGM/INSIDE) [Evolutions/Dynamiques en cours dans le WebSemantique/LinkedData](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/2-evolutions/20210122_WebSem_Evolution_Feliachi_Grellet.pdf)
+
+
+- Franck Michel
 - end -> ~ 11:15
 
 ### 3°/ Retour d'expérience de chacun
