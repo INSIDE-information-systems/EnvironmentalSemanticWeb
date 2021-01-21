@@ -1,4 +1,4 @@
-# 20-01-2021 Workshop pôle INSIDE - Le WebSémantique 
+# 22-01-2021 Workshop pôle INSIDE - Le WebSémantique 
 
 
 
@@ -36,7 +36,7 @@ Présentations de 15-20'
 - NRCan - Eric Boisvert: Canada/USA - Groundwater Surface water Interoperability Pilot (GSIP)- 14:00 - 14:30
 - IFREMER - sous réserve confirmation - 14:30 - 15:00
 - ST SANDRE - sous réserve confirmation - 15:00 - 15:30
-- INSIDE - Logique Linked Data de déploiement des nouvelles API OGC – API4INSPIRE (15')
+- S.Grellet INSIDE - [Logique Linked Data de déploiement des nouvelles API OGC – API4INSPIRE](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/3-retour_experience/20210122_INSIDE_API4INSPIRE_Implementation_Feedback_Grellet.pdf) (15')
 - BRGM - exemple d'implémentation Linked Data côté Client (15')
 
 ### 4°/ Discussions / conclusions / suites
