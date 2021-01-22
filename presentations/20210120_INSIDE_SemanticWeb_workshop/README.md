@@ -18,7 +18,7 @@ Franck Michel (CNRS) : [Web sémantique, web de données, données liées](https
 ### 2°/ Evolutions/Dynamiques en cours dans le WebSemantique/LinkedData  ~ 10:30
 - Sylvain Grellet / Abdelfettah Feliachi : [Evolutions/Dynamiques en cours dans le WebSemantique/LinkedData](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/2-evolutions/20210122_WebSem_Evolution_Feliachi_Grellet.pdf)
 
-- Franck Michel
+- Franck Michel : [Bioschemas/Schema.org: marking up biodiversity web sites](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/2-evolutions/20210122_Franck_Michel-Bioschemas.pdf)
 - fin -> ~ 11:15
 
 ### 3°/ Retour d'expérience de chacun
