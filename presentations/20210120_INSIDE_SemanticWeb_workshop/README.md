@@ -13,25 +13,23 @@ Google Doc utilisé lors de la session : https://docs.google.com/document/d/1fuo
 
 ### 1°/ Qu'est ce que le WebSémantique (09:15)
 Franck Michel (CNRS) : [Web sémantique, web de données, données liées](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/1-set_the_scene/Franck_Michel-IntroWS.pdf)
-- fin ->  ~ 10:15
 
 ### 2°/ Evolutions/Dynamiques en cours dans le WebSemantique/LinkedData  ~ 10:30
 - Sylvain Grellet / Abdelfettah Feliachi : [Evolutions/Dynamiques en cours dans le WebSemantique/LinkedData](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/2-evolutions/20210122_WebSem_Evolution_Feliachi_Grellet.pdf)
 
 - Franck Michel : [Bioschemas/Schema.org: marking up biodiversity web sites](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/2-evolutions/20210122_Franck_Michel-Bioschemas.pdf)
-- fin -> ~ 11:15
 
 ### 3°/ Retour d'expérience de chacun
 Présentations de 15-20'
-- CNRS/MNHN :  TaxRef-LD - 11:30 -> 12:00
+- F.Michel / O.Gargominy (MNHN) :  [TaxRef-LD](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/3-retour_experience/20210122_Franck_Michel%20-%20TAXREF-LD.pdf) - 11:30 -> 12:00
 
 
 ### Pause 12:00 -> 13:00
 
 
 ### 3°/ Retour d'expérience de chacun (suite)
-- CNRS/MNHN : SPARQL micro-services - 13:00 -> 13:30
-- BRGM : Registres et vocabulaires. La qualité et l'interopérabilité des données par la sémantique - 13:30 - 14:00
+- F.Michel / O.Gargominy (MNHN) : SPARQL micro-services - 13:00 -> 13:30
+- Hélène Bressan (BRGM) : [Registres et vocabulaires. La qualité et l'interopérabilité des données par la sémantique](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/3-retour_experience/20210122_BRGM_registres_bressan.pptx) - 13:30 - 14:00
 - NRCan - Eric Boisvert: Canada/USA - Groundwater Surface water Interoperability Pilot (GSIP)- 14:00 - 14:30
 - IFREMER - sous réserve confirmation - 14:30 - 15:00
 - ST SANDRE - sous réserve confirmation - 15:00 - 15:30
