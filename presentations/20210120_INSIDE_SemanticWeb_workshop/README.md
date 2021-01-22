@@ -30,7 +30,7 @@ Présentations de 15-20'
 ### 3°/ Retour d'expérience de chacun (suite)
 - F.Michel / O.Gargominy (MNHN) : SPARQL micro-services - 13:00 -> 13:30
 - Hélène Bressan (BRGM) : [Registres et vocabulaires. La qualité et l'interopérabilité des données par la sémantique](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/3-retour_experience/20210122_BRGM_registres_bressan.pptx) - 13:30 - 14:00
-- Eric Boisvert (Ressources naturelles Canada / Natural Resources Canada): Canada/USA - Groundwater Surface water Interoperability Pilot (GSIP)- 14:00 - 14:30
+- Eric Boisvert (Ressources naturelles Canada / Natural Resources Canada): [Canada/USA - Groundwater Surface water Interoperability Pilot (GSIP)](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/3-retour_experience/BOISVERT-websemantique-FR.pptx)- 14:00 - 14:30
 - IFREMER - sous réserve confirmation - 14:30 - 15:00
 - ST SANDRE : [Le web sémantique au Sandre: retour d'expérience](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/3-retour_experience/web_semantique_sandre.pdf) - 15:00 - 15:30
 - S.Grellet INSIDE - [Logique Linked Data de déploiement des nouvelles API OGC – API4INSPIRE](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/blob/master/presentations/20210120_INSIDE_SemanticWeb_workshop/3-retour_experience/20210122_INSIDE_API4INSPIRE_Implementation_Feedback_Grellet.pdf) (15')
