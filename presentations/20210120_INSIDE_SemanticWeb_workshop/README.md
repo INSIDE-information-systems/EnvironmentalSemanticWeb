@@ -23,15 +23,14 @@ Franck Michel (CNRS) : [Web sémantique, web de données, données liées](https
 
 ### 3°/ Retour d'expérience de chacun
 Présentations de 15-20'
-- CNRS/MNHN : SPARQL micro-services - 11:30 -> 12:00
-
+- CNRS/MNHN :  TaxRef-LD - 11:30 -> 12:00
 
 
 ### Pause 12:00 -> 13:00
 
 
 ### 3°/ Retour d'expérience de chacun (suite)
-- CNRS/MNHN :  TaxRef-LD - 13:00 -> 13:30
+- CNRS/MNHN : SPARQL micro-services - 13:00 -> 13:30
 - BRGM : Registres et vocabulaires. La qualité et l'interopérabilité des données par la sémantique - 13:30 - 14:00
 - NRCan - Eric Boisvert: Canada/USA - Groundwater Surface water Interoperability Pilot (GSIP)- 14:00 - 14:30
 - IFREMER - sous réserve confirmation - 14:30 - 15:00
