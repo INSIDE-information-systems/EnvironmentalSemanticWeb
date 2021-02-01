@@ -42,7 +42,7 @@ For more info on how BLiV works and its code, see <https://github.com/BRGM/BLiv>
 A comparison of the two main existing tools in Europe has been carried out.
 It's shared in the ['linkeddataregistries' folder]( https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/tree/master/linkeddataregistries)
 
-## French environmental Information Systems ()
+## French environmental Information Systems
 
 ### 22-01-2021 SemanticWeb Workshop
 
