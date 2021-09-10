@@ -37,10 +37,29 @@ Some quick link below to dive in the demos (see ['demo'](https://github.com/INSI
 
 For more info on how BLiV works and its code, see <https://github.com/BRGM/BLiv> 
 
-### Linked data registries comparison
+### Linked data registries 
 
-A comparison of the two main existing tools in Europe has been carried out.
-It's shared in the ['linkeddataregistries' folder]( https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/tree/master/linkeddataregistries)
+#### A vision on linked data registries
+
+LinkedDataregistryes and Vocabularies : data quality and interoperability thanks to Semantics : [BRGM presentation to the French Research Infrastructure - DataTerra](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/tree/master/presentations/20210511_GTVocabs_DATATERRA/20210511_StructuratioRegistresBRGM.pptx) @french presentation
+
+#### Tools
+
+Several Tools are encountered on the topic such as:
+
+- Epimorphics [UKGovLD/registry-core](https://github.com/UKGovLD/registry-core)
+- JRC [Re3gistry](https://ec.europa.eu/isa2/solutions/re3gistry_en)
+- [VocPrez](https://github.com/RDFLib/VocPrez)
+- and [Skosmos](https://skosmos.org/)
+
+A comparison of Re3gistry and UKGovLD/registry-core was carried when the activity started here 
+It's shared in the ['linkeddataregistries' folder]( https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/tree/master/linkeddataregistries).
+
+
+An example deployment of Epimorphics UKGovLD/registry-core by BRGM : https://data.geoscience.fr/ncl/.
+
+A summary presentation of the functionalities of the tool is available [here](https://github.com/INSIDE-information-systems/EnvironmentalSemanticWeb/tree/master/presentations/20210511_GTVocabs_DATATERRA/20210511_OutilLdRegistry_Grellet.pptx)  @french presentation
+
 
 ## French environmental Information Systems
 
