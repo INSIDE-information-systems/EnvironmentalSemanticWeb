@@ -1,0 +1,62 @@
+http://sparks-vm33.i3s.unice.fr:8890/describe/?url=http://taxref.mnhn.fr/lod/name/361079
+
+http://taxref.i3s.unice.fr/describe/?url=@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
+<http://taxref.mnhn.fr/lod/name/361079>	rdf:type	skos:Concept .
+@prefix ns2:	<http://rs.tdwg.org/ontology/voc/TaxonName#> .
+<http://taxref.mnhn.fr/lod/name/361079>	rdf:type	ns2:TaxonName .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+<http://taxref.mnhn.fr/lod/name/361079>	rdfs:label	"Delphinus capensis Gray, 1828" ;
+	skos:prefLabel	"Delphinus capensis" ;
+	skos:exactMatch	<urn:lsid:marinespecies.org:taxname:137093> .
+@prefix dct:	<http://purl.org/dc/terms/> .
+<http://taxref.mnhn.fr/lod/name/361079>	dct:identifier	"361079" .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+<http://taxref.mnhn.fr/lod/name/361079>	foaf:page	<https://www.catalogueoflife.org/data/taxon/34JWC> ,
+		<http://www.marinespecies.org/aphia.php?p=taxdetails&id=137093> ,
+		<https://www.gbif.org/species/2440647> ,
+		<http://apiv3.iucnredlist.org/api/v3/taxonredirect/6337> ,
+		<http://www.marinespecies.org/cetacea/aphia.php?p=taxdetails&id=137093> .
+@prefix ns6:	<http://www.catalogueoflife.org/annual-checklist/2019/details/species/id/> .
+<http://taxref.mnhn.fr/lod/name/361079>	foaf:page	ns6:adb751e86a7ef952a39bde8b37e6c514 ,
+		<https://inpn.mnhn.fr/espece/cd_nom/361079?lg=en> .
+@prefix schema:	<http://schema.org/> .
+<http://taxref.mnhn.fr/lod/name/361079>	schema:identifier	_:b66216304 ,
+		_:b59265031 ,
+		_:b66638820 ,
+		_:b59934501 ,
+		_:b67068720 .
+@prefix ns8:	<http://www.wikidata.org/prop/direct/> .
+<http://taxref.mnhn.fr/lod/name/361079>	ns8:P850	"137093" .
+@prefix taxrefprop:	<http://taxref.mnhn.fr/lod/property/> .
+<http://taxref.mnhn.fr/lod/name/361079>	taxrefprop:hasAuthority	"Gray, 1828" .
+@prefix taxrefrk:	<http://taxref.mnhn.fr/lod/taxrank/> .
+<http://taxref.mnhn.fr/lod/name/361079>	taxrefprop:hasRank	taxrefrk:Species ;
+	taxrefprop:isSynonymOf	<http://taxref.mnhn.fr/lod/taxon/60878> .
+@prefix dwc:	<http://rs.tdwg.org/dwc/terms/> .
+<http://taxref.mnhn.fr/lod/name/361079>	dwc:scientificName	"Delphinus capensis" .
+@prefix taxref:	<http://taxref.mnhn.fr/lod/> .
+<http://taxref.mnhn.fr/lod/name/361079>	skos:inScheme	taxref:taxref-ld ;
+	ns8:P627	"6337" ;
+	ns8:P846	"2440647" .
+_:b59265031	rdf:type	schema:PropertyValue ;
+	rdfs:label	"GBIF id" ;
+	schema:propertyID	ns8:P846 ;
+	schema:value	"2440647" .
+_:b59934501	rdf:type	schema:PropertyValue ;
+	rdfs:label	"WoRMS id" ;
+	schema:propertyID	ns8:P850 ;
+	schema:value	"137093" .
+_:b66216304	rdf:type	schema:PropertyValue ;
+	rdfs:label	"GBIF id" ;
+	schema:propertyID	ns8:P846 ;
+	schema:value	"2440647" .
+_:b66638820	rdf:type	schema:PropertyValue ;
+	rdfs:label	"IUCN Red List id" ;
+	schema:propertyID	ns8:P627 ;
+	schema:value	"6337" .
+_:b67068720	rdf:type	schema:PropertyValue ;
+	rdfs:label	"WoRMS id" ;
+	schema:propertyID	ns8:P850 ;
+	schema:value	"137093" .
+
